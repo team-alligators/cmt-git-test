@@ -13819,7 +13819,7 @@
       "iconUrl" : "https://digitalmarketplace-sapcp.s3.eu-central-1.amazonaws.com/DR-TaUfZSJuAaC89RmL8Ft-U2kBVmZMTVDj0A-A1CxVnNiw5ffVzwDeZEwOZ7cNF.svg"
     },
     "keywords" : [ ],
-    "extractionTimestamp" : "2018-10-18T10:15:56.406Z",
+    "extractionTimestamp" : "2018-10-18T10:18:56.406Z",
     "headlines" : [ {
       "headline" : "Entitlement Repository",
       "text" : "The Cloud Services provides a cloud-based service to support customers tocentrally manage entitlements."
@@ -13891,17 +13891,17 @@
         "allUnitVolumeRates" : [ ],
         "tierRates" : [ ]
       }, {
-        "id" : "8f20c484-b899-4189-a19b-27a22cd66f77",
-        "checksum" : "398bace97a11f262d0bbf0c74e859691908bd9e1",
-        "currency" : "USD",
-        "revenueCloudMarketId" : "USD",
+        "id" : "8f20c484-b899-4189-a19b-27a22cd65557",
+        "checksum" : "398bace97a11f262d0bbf0c74e855591908bd9e1",
+        "currency" : "GBP",
+        "revenueCloudMarketId" : "GBP",
         "group" : {
           "id" : "0",
           "validFrom" : "2018-10-17T12:00:00Z",
           "validUntil" : null
         },
         "markets" : [ {
-          "marketId" : "us"
+          "marketId" : "gb"
         } ],
         "description" : null,
         "periodicity" : "calendar-monthly",
@@ -13914,7 +13914,7 @@
           "blockSize" : 250000,
           "pricePerBlock" : {
             "amount" : 14000.0,
-            "currency" : "USD"
+            "currency" : "GBP"
           }
         } ],
         "allUnitVolumeRates" : [ ],
@@ -13940,8 +13940,8 @@
         "revenueCloudRatePlanId" : "9f94bb2e-164f-4081-9b3a-5a72f114950b"
       }, {
         "metricId" : "document",
-        "ratePlanId" : "8f20c484-b899-4189-a19b-27a22cd66f77",
-        "revenueCloudRatePlanId" : "c2871d4f-eb33-4a92-828a-f5530f42bbe7"
+        "ratePlanId" : "8f20c484-b899-4189-a19b-27a22cd65557",
+        "revenueCloudRatePlanId" : "d09ca1e2-6cc6-46df-938f-734ca26ff8da"
       } ],
       "contractTypes" : [ {
         "code" : "subscription",
