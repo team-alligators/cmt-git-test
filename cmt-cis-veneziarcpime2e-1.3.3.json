@@ -10,7 +10,7 @@
     "technicalName" : "Concur",
     "type" : "APIPackage",
     "name" : "SAP Concur",
-    "shortName" : "SAP Concur",
+    "shortName" : "SAP Concurr",
     "description" : {
       "small" : "Travel, expenses and invoices—automated and in control.",
       "large" : "Our dynamic ecosystem connects you with more than 150 of the apps, partners, suppliers and products your employees are already using. All your spending data is automatically integrated to deliver the experience your employees expect and the full visibility you need into all dimensions of spend, so you can spot new ways to save."
@@ -13845,9 +13845,9 @@
     } ],
     "entitlementRules" : [ {
       "id" : "17773def-226d-f8d6-df4d-4d92995275d2",
-      "labels" : [ "stage", "prod" ],
-      "technicalName" : "ems_subscription_enterprise",
       "type" : "standard-entitlement-rule",
+      "technicalName" : "ems_subscription_enterprise",
+      "validFrom" : "2018-10-17T12:00:00Z",
       "servicePlanId" : "afa129f5-10c4-2a32-c076-2e367017d80d",
       "technicalAssetId" : {
         "composedId" : {
@@ -13861,7 +13861,38 @@
       }, {
         "technicalAssetVariantId" : "e05aaea8-df52-a364-812f-ae087f152aab"
       } ],
+      "ratePlans" : [ {
+        "id" : "8f20c484-b899-4189-a19b-27a22cd66f18",
+        "checksum" : "398bace97a11f262d0bbf0c73e859691908bd9e1",
+        "currency" : "EUR",
+        "revenueCloudMarketId" : "EUR",
+        "group" : {
+          "id" : "0",
+          "validFrom" : "2018-10-17T12:00:00Z",
+          "validUntil" : null
+        },
+        "markets" : [ {
+          "marketId" : "europe"
+        } ],
+        "description" : null,
+        "periodicity" : "calendar-monthly",
+        "fixedRates" : [ ],
+        "setupFees" : [ ],
+        "blockRates" : [ {
+          "id" : "b90ff8a4-86d1-dd00-6dbc-36022232d45b",
+          "metricId" : "document",
+          "includedQuantity" : 0,
+          "blockSize" : 250000,
+          "pricePerBlock" : {
+            "amount" : 14000.0,
+            "currency" : "EUR"
+          }
+        } ],
+        "allUnitVolumeRates" : [ ],
+        "tierRates" : [ ]
+      } ],
       "excludedFromBilling" : false,
+      "ratePlansExcludedFromBilling" : [ ],
       "materialNumberMappings" : [ {
         "code" : "2fa244a5-6ea7-4548-8f3f-8adba5d28e66",
         "materialNumber" : "8006186",
@@ -13870,48 +13901,27 @@
         "chargingPeriod" : "Monthly",
         "defaultMetric" : true
       } ],
-      "ratePlans" : [ {
-        "id" : "8f20c484-b899-4189-a19b-27a22cd66f18",
-        "technicalName" : "rp_ems_subscription_enterprise_EUR",
-        "markets" : [ {
-          "marketId" : "europe"
-        } ],
-        "periodicity" : "calendar-monthly",
-        "fixedRates" : [ ],
-        "setupFees" : [ ],
-        "blockRates" : [ {
-          "id" : "b90ff8a4-86d1-dd00-6dbc-36022232d45b",
-          "pricePerBlock" : {
-            "amount" : 14000,
-            "currency" : "EUR"
-          },
-          "metricId" : "document",
-          "includedQuantity" : 0,
-          "blockSize" : 250000
-        } ],
-        "allUnitVolumeRates" : [ ],
-        "tierRates" : [ ],
-        "currency" : "EUR",
-        "revenueCloudMarketId" : "EUR",
-        "group" : {
-          "id" : "0",
-          "validFrom" : "2018-10-17T00:00:00Z"
-        },
-        "checksum" : "398bace97a11f262d0bbf0c73e859691908bd9e1"
+      "rcProductMappings" : [ {
+        "metricId" : "document",
+        "revenueCloudProductId" : "997bdd1a-6435-42cd-b59e-358ba96f61fc"
+      } ],
+      "rcRatePlanMappings" : [ {
+        "metricId" : "document",
+        "ratePlanId" : "8f20c484-b899-4189-a19b-27a22cd66f18",
+        "revenueCloudRatePlanId" : "9f94bb2e-164f-4081-9b3a-5a72f114950b"
       } ],
       "contractTypes" : [ {
-        "name" : "Subscription",
-        "code" : "subscription"
+        "code" : "subscription",
+        "name" : "Subscription"
       } ],
       "referencedEntitlementRules" : [ ],
       "features" : [ ],
-      "validFrom" : "2018-10-17T00:00:00Z",
-      "ratePlansExcludedFromBilling" : [ ]
+      "labels" : [ "stage", "prod" ]
     }, {
       "id" : "f100b3ef-82c7-58a7-d702-eae0cf159cf2",
-      "labels" : [ "stage", "prod" ],
-      "technicalName" : "ems_subscription_standard",
       "type" : "standard-entitlement-rule",
+      "technicalName" : "ems_subscription_standard",
+      "validFrom" : "2018-10-17T12:00:00Z",
       "servicePlanId" : "cc3d9e4a-4854-31af-ec9b-322dd6881bc1",
       "technicalAssetId" : {
         "composedId" : {
@@ -13925,7 +13935,38 @@
       }, {
         "technicalAssetVariantId" : "7acbb504-2f6e-46dc-7006-ea79ab9c4e32"
       } ],
+      "ratePlans" : [ {
+        "id" : "b36317af-121b-47e4-93a4-2873ed8f1f44",
+        "checksum" : "ffeb0ac3fe96ea2d0994942a28447be77d1c6a94",
+        "currency" : "EUR",
+        "revenueCloudMarketId" : "EUR",
+        "group" : {
+          "id" : "0",
+          "validFrom" : "2018-10-17T12:00:00Z",
+          "validUntil" : null
+        },
+        "markets" : [ {
+          "marketId" : "europe"
+        } ],
+        "description" : null,
+        "periodicity" : "calendar-monthly",
+        "fixedRates" : [ ],
+        "setupFees" : [ ],
+        "blockRates" : [ {
+          "id" : "47ab550a-157a-4860-7b23-dab7a269453b",
+          "metricId" : "document",
+          "includedQuantity" : 0,
+          "blockSize" : 250000,
+          "pricePerBlock" : {
+            "amount" : 11500.0,
+            "currency" : "EUR"
+          }
+        } ],
+        "allUnitVolumeRates" : [ ],
+        "tierRates" : [ ]
+      } ],
       "excludedFromBilling" : false,
+      "ratePlansExcludedFromBilling" : [ ],
       "materialNumberMappings" : [ {
         "code" : "bcd4dc87-9a9e-4a1d-b241-caf4edf608b9",
         "materialNumber" : "8006185",
@@ -13934,43 +13975,22 @@
         "chargingPeriod" : "Monthly",
         "defaultMetric" : true
       } ],
-      "ratePlans" : [ {
-        "id" : "b36317af-121b-47e4-93a4-2873ed8f1f44",
-        "technicalName" : "rp_ems_subscription_standard_EUR",
-        "markets" : [ {
-          "marketId" : "europe"
-        } ],
-        "periodicity" : "calendar-monthly",
-        "fixedRates" : [ ],
-        "setupFees" : [ ],
-        "blockRates" : [ {
-          "id" : "47ab550a-157a-4860-7b23-dab7a269453b",
-          "pricePerBlock" : {
-            "amount" : 11500,
-            "currency" : "EUR"
-          },
-          "metricId" : "document",
-          "includedQuantity" : 0,
-          "blockSize" : 250000
-        } ],
-        "allUnitVolumeRates" : [ ],
-        "tierRates" : [ ],
-        "currency" : "EUR",
-        "revenueCloudMarketId" : "EUR",
-        "group" : {
-          "id" : "0",
-          "validFrom" : "2018-10-17T00:00:00Z"
-        },
-        "checksum" : "ffeb0ac3fe96ea2d0994942a28447be77d1c6a94"
+      "rcProductMappings" : [ {
+        "metricId" : "document",
+        "revenueCloudProductId" : "506e33e4-9ad6-4299-856f-b895b896171b"
+      } ],
+      "rcRatePlanMappings" : [ {
+        "metricId" : "document",
+        "ratePlanId" : "b36317af-121b-47e4-93a4-2873ed8f1f44",
+        "revenueCloudRatePlanId" : "f9b33746-5c11-4b4d-8584-e3d94b404326"
       } ],
       "contractTypes" : [ {
-        "name" : "Subscription",
-        "code" : "subscription"
+        "code" : "subscription",
+        "name" : "Subscription"
       } ],
       "referencedEntitlementRules" : [ ],
       "features" : [ ],
-      "validFrom" : "2018-10-17T00:00:00Z",
-      "ratePlansExcludedFromBilling" : [ ]
+      "labels" : [ "stage", "prod" ]
     } ],
     "tags" : [ {
       "type" : "CAT",
@@ -14045,9 +14065,9 @@
     } ],
     "entitlementRules" : [ {
       "id" : "9578959c-d59d-abe2-7660-8b7fefc00afa",
-      "labels" : [ "stage", "prod" ],
-      "technicalName" : "Concur_Expense_Professional",
       "type" : "standard-entitlement-rule",
+      "technicalName" : "Concur_Expense_Professional",
+      "validFrom" : "2018-10-10T12:00:00Z",
       "servicePlanId" : "21d93595-879e-6975-c6c2-70e4763e2c08",
       "technicalAssetId" : {
         "composedId" : {
@@ -14061,7 +14081,38 @@
       }, {
         "technicalAssetVariantId" : "49ac6c7d-c361-dfa7-4510-d161a5b8ba40"
       } ],
+      "ratePlans" : [ {
+        "id" : "5398202e-de94-4c47-9e67-862a709d480b",
+        "checksum" : "36e4a1f2656c44f01bfad4f2874613498dffef56",
+        "currency" : "USD",
+        "revenueCloudMarketId" : "USD",
+        "group" : {
+          "id" : "0",
+          "validFrom" : "2018-10-10T12:00:00Z",
+          "validUntil" : null
+        },
+        "markets" : [ {
+          "marketId" : "US"
+        } ],
+        "description" : null,
+        "periodicity" : "calendar-monthly",
+        "fixedRates" : [ ],
+        "setupFees" : [ ],
+        "blockRates" : [ {
+          "id" : "9b782f06-b8a1-f5f2-e1ef-ad817616b1f7",
+          "metricId" : "instance",
+          "includedQuantity" : 0,
+          "blockSize" : 1,
+          "pricePerBlock" : {
+            "amount" : 1000.0,
+            "currency" : "USD"
+          }
+        } ],
+        "allUnitVolumeRates" : [ ],
+        "tierRates" : [ ]
+      } ],
       "excludedFromBilling" : false,
+      "ratePlansExcludedFromBilling" : [ ],
       "materialNumberMappings" : [ {
         "code" : "dc438dfa-8d5e-4cd4-8a02-88767766da7e",
         "materialNumber" : "2000002",
@@ -14077,48 +14128,30 @@
         "chargingPeriod" : "Monthly",
         "defaultMetric" : true
       } ],
-      "ratePlans" : [ {
-        "id" : "5398202e-de94-4c47-9e67-862a709d480b",
-        "technicalName" : "Concur_Expense_Professional_US",
-        "markets" : [ {
-          "marketId" : "US"
-        } ],
-        "periodicity" : "calendar-monthly",
-        "fixedRates" : [ ],
-        "setupFees" : [ ],
-        "blockRates" : [ {
-          "id" : "9b782f06-b8a1-f5f2-e1ef-ad817616b1f7",
-          "pricePerBlock" : {
-            "amount" : 1000,
-            "currency" : "USD"
-          },
-          "metricId" : "instance",
-          "includedQuantity" : 0,
-          "blockSize" : 1
-        } ],
-        "allUnitVolumeRates" : [ ],
-        "tierRates" : [ ],
-        "currency" : "USD",
-        "revenueCloudMarketId" : "USD",
-        "group" : {
-          "id" : "0",
-          "validFrom" : "2018-10-10T00:00:00Z"
-        },
-        "checksum" : "36e4a1f2656c44f01bfad4f2874613498dffef56"
+      "rcProductMappings" : [ {
+        "metricId" : "instance",
+        "revenueCloudProductId" : "263933b5-454c-45ca-9f72-50255194fe6f"
+      }, {
+        "metricId" : "connections",
+        "revenueCloudProductId" : "4f64c223-b658-469f-a9fd-3c3ce120523a"
+      } ],
+      "rcRatePlanMappings" : [ {
+        "metricId" : "instance",
+        "ratePlanId" : "5398202e-de94-4c47-9e67-862a709d480b",
+        "revenueCloudRatePlanId" : "3aea7c34-39f0-4f67-8d61-a18442fa0207"
       } ],
       "contractTypes" : [ {
-        "name" : "Subscription",
-        "code" : "subscription"
+        "code" : "subscription",
+        "name" : "Subscription"
       } ],
       "referencedEntitlementRules" : [ ],
       "features" : [ ],
-      "validFrom" : "2018-10-10T00:00:00Z",
-      "ratePlansExcludedFromBilling" : [ ]
+      "labels" : [ "stage", "prod" ]
     }, {
       "id" : "af5287a0-98b0-d1cb-387b-8ed23716bdd3",
-      "labels" : [ "prod", "stage" ],
-      "technicalName" : "Concur_Expense_Standard",
       "type" : "standard-entitlement-rule",
+      "technicalName" : "Concur_Expense_Standard",
+      "validFrom" : "2018-10-10T12:00:00Z",
       "servicePlanId" : "aa64c09c-340d-6fb6-9a23-9870b995a4cd",
       "technicalAssetId" : {
         "composedId" : {
@@ -14132,7 +14165,38 @@
       }, {
         "technicalAssetVariantId" : "e582d847-7718-8359-a4ff-f48951c793bb"
       } ],
+      "ratePlans" : [ {
+        "id" : "167f9925-f933-435f-b581-8f2ce60006e1",
+        "checksum" : "36e4a1f2656c44f01bfad4f2874613498dffef56",
+        "currency" : "USD",
+        "revenueCloudMarketId" : "USD",
+        "group" : {
+          "id" : "0",
+          "validFrom" : "2018-10-10T12:00:00Z",
+          "validUntil" : null
+        },
+        "markets" : [ {
+          "marketId" : "US"
+        } ],
+        "description" : null,
+        "periodicity" : "calendar-monthly",
+        "fixedRates" : [ ],
+        "setupFees" : [ ],
+        "blockRates" : [ {
+          "id" : "b06cadfd-8443-04eb-bf3b-b462abf03668",
+          "metricId" : "instance",
+          "includedQuantity" : 0,
+          "blockSize" : 1,
+          "pricePerBlock" : {
+            "amount" : 1000.0,
+            "currency" : "USD"
+          }
+        } ],
+        "allUnitVolumeRates" : [ ],
+        "tierRates" : [ ]
+      } ],
       "excludedFromBilling" : false,
+      "ratePlansExcludedFromBilling" : [ ],
       "materialNumberMappings" : [ {
         "code" : "0520bb1a-70ed-4738-9095-1d61cedf6ddc",
         "materialNumber" : "2000003",
@@ -14148,43 +14212,25 @@
         "chargingPeriod" : "Monthly",
         "defaultMetric" : true
       } ],
-      "ratePlans" : [ {
-        "id" : "167f9925-f933-435f-b581-8f2ce60006e1",
-        "technicalName" : "Concur_Expense_Standard_US",
-        "markets" : [ {
-          "marketId" : "US"
-        } ],
-        "periodicity" : "calendar-monthly",
-        "fixedRates" : [ ],
-        "setupFees" : [ ],
-        "blockRates" : [ {
-          "id" : "b06cadfd-8443-04eb-bf3b-b462abf03668",
-          "pricePerBlock" : {
-            "amount" : 1000,
-            "currency" : "USD"
-          },
-          "metricId" : "instance",
-          "includedQuantity" : 0,
-          "blockSize" : 1
-        } ],
-        "allUnitVolumeRates" : [ ],
-        "tierRates" : [ ],
-        "currency" : "USD",
-        "revenueCloudMarketId" : "USD",
-        "group" : {
-          "id" : "0",
-          "validFrom" : "2018-10-10T00:00:00Z"
-        },
-        "checksum" : "36e4a1f2656c44f01bfad4f2874613498dffef56"
+      "rcProductMappings" : [ {
+        "metricId" : "instance",
+        "revenueCloudProductId" : "5baad4d8-8fdc-4f91-9e1e-406d16630239"
+      }, {
+        "metricId" : "connections",
+        "revenueCloudProductId" : "cb0353b2-7745-4f61-ba2c-5691179634ce"
+      } ],
+      "rcRatePlanMappings" : [ {
+        "metricId" : "instance",
+        "ratePlanId" : "167f9925-f933-435f-b581-8f2ce60006e1",
+        "revenueCloudRatePlanId" : "87648a58-9181-48bc-80d4-de4af55e9a17"
       } ],
       "contractTypes" : [ {
-        "name" : "Subscription",
-        "code" : "subscription"
+        "code" : "subscription",
+        "name" : "Subscription"
       } ],
       "referencedEntitlementRules" : [ ],
       "features" : [ ],
-      "validFrom" : "2018-10-10T00:00:00Z",
-      "ratePlansExcludedFromBilling" : [ ]
+      "labels" : [ "prod", "stage" ]
     } ],
     "tags" : [ {
       "type" : "CAT",
@@ -14341,9 +14387,9 @@
     } ],
     "entitlementRules" : [ {
       "id" : "ba9ce4c5-2234-4861-a6da-a405efaabc06",
-      "labels" : [ "prod", "stage" ],
-      "technicalName" : "ent_postgresql_small",
       "type" : "standard-entitlement-rule",
+      "technicalName" : "ent_postgresql_small",
+      "validFrom" : "2017-11-01T12:00:00Z",
       "servicePlanId" : "21e504c2-213e-44b6-8399-896d3cc06ce1",
       "technicalAssetId" : {
         "composedId" : {
@@ -14357,18 +14403,16 @@
       }, {
         "technicalAssetVariantId" : "86a28054-ad92-4af8-8ac4-b464d074a8be"
       } ],
-      "excludedFromBilling" : false,
-      "materialNumberMappings" : [ {
-        "code" : "71c13ab8-ea69-46e8-9ed3-6641f74461b8",
-        "materialNumber" : "8005371",
-        "metricId" : "instances",
-        "type" : "ISP",
-        "chargingPeriod" : "Monthly",
-        "defaultMetric" : true
-      } ],
       "ratePlans" : [ {
         "id" : "9d808367-9f46-4971-a4b5-98ed0d03750e",
-        "technicalName" : "rp_postgresql_small_US_em",
+        "checksum" : "f49d1eb646bbb6d84a74fc74ae4145025753ffdb",
+        "currency" : "USD",
+        "revenueCloudMarketId" : "USD",
+        "group" : {
+          "id" : "0",
+          "validFrom" : "2017-11-01T12:00:00Z",
+          "validUntil" : null
+        },
         "markets" : [ {
           "marketId" : "US"
         }, {
@@ -14380,182 +14424,218 @@
         "setupFees" : [ ],
         "blockRates" : [ {
           "id" : "4cbae501-089a-433b-95d8-508029109707",
-          "pricePerBlock" : {
-            "amount" : 2172,
-            "currency" : "USD"
-          },
           "metricId" : "instances",
           "includedQuantity" : 0,
-          "blockSize" : 1
+          "blockSize" : 1,
+          "pricePerBlock" : {
+            "amount" : 2172.0,
+            "currency" : "USD"
+          }
         } ],
         "allUnitVolumeRates" : [ ],
-        "tierRates" : [ ],
-        "currency" : "USD",
-        "revenueCloudMarketId" : "USD",
-        "group" : {
-          "id" : "0",
-          "validFrom" : "2017-11-01T00:00:00Z"
-        },
-        "checksum" : "f49d1eb646bbb6d84a74fc74ae4145025753ffdb"
+        "tierRates" : [ ]
       }, {
         "id" : "97605f36-0eb8-4694-b7ef-df1a5ae8e56c",
-        "technicalName" : "rp_postgresql_small_uk",
+        "checksum" : "2e3f79c884b355309c9f416c8148ede5aa467cef",
+        "currency" : "GBP",
+        "revenueCloudMarketId" : "GBP",
+        "group" : {
+          "id" : "0",
+          "validFrom" : "2017-11-01T12:00:00Z",
+          "validUntil" : null
+        },
         "markets" : [ {
           "marketId" : "UK"
         } ],
+        "description" : null,
         "periodicity" : "calendar-monthly",
         "fixedRates" : [ ],
         "setupFees" : [ ],
         "blockRates" : [ {
           "id" : "d2068bd3-c2a1-475d-b845-aa4b80813e87",
-          "pricePerBlock" : {
-            "amount" : 1482,
-            "currency" : "GBP"
-          },
           "metricId" : "instances",
           "includedQuantity" : 0,
-          "blockSize" : 1
+          "blockSize" : 1,
+          "pricePerBlock" : {
+            "amount" : 1482.0,
+            "currency" : "GBP"
+          }
         } ],
         "allUnitVolumeRates" : [ ],
-        "tierRates" : [ ],
-        "currency" : "GBP",
-        "revenueCloudMarketId" : "GBP",
-        "group" : {
-          "id" : "0",
-          "validFrom" : "2017-11-01T00:00:00Z"
-        },
-        "checksum" : "2e3f79c884b355309c9f416c8148ede5aa467cef"
+        "tierRates" : [ ]
       }, {
         "id" : "8b02f15a-c1de-4ab2-8f11-d4f962e764dc",
-        "technicalName" : "rp_postgresql_small_ca",
+        "checksum" : "0aa97dd32d90ba83375f640559a009e87339ab5a",
+        "currency" : "CAD",
+        "revenueCloudMarketId" : "CAD",
+        "group" : {
+          "id" : "0",
+          "validFrom" : "2017-11-01T12:00:00Z",
+          "validUntil" : null
+        },
         "markets" : [ {
           "marketId" : "CA"
         } ],
+        "description" : null,
         "periodicity" : "calendar-monthly",
         "fixedRates" : [ ],
         "setupFees" : [ ],
         "blockRates" : [ {
           "id" : "7778e826-6449-4088-9210-c37f7c3bd535",
-          "pricePerBlock" : {
-            "amount" : 2923,
-            "currency" : "CAD"
-          },
           "metricId" : "instances",
           "includedQuantity" : 0,
-          "blockSize" : 1
+          "blockSize" : 1,
+          "pricePerBlock" : {
+            "amount" : 2923.0,
+            "currency" : "CAD"
+          }
         } ],
         "allUnitVolumeRates" : [ ],
-        "tierRates" : [ ],
-        "currency" : "CAD",
-        "revenueCloudMarketId" : "CAD",
-        "group" : {
-          "id" : "0",
-          "validFrom" : "2017-11-01T00:00:00Z"
-        },
-        "checksum" : "0aa97dd32d90ba83375f640559a009e87339ab5a"
+        "tierRates" : [ ]
       }, {
         "id" : "6c13c342-60a2-40a0-b453-2d599273cebf",
-        "technicalName" : "rp_postgresql_small_USD_150118",
+        "checksum" : "c759fdf35ac13be8fd315ee6bf36f5e3ef9363c1",
+        "currency" : "USD",
+        "revenueCloudMarketId" : "USD",
+        "group" : {
+          "id" : "0",
+          "validFrom" : "2018-01-15T12:00:00Z",
+          "validUntil" : null
+        },
         "markets" : [ {
           "marketId" : "US"
         }, {
           "marketId" : "EM"
         } ],
+        "description" : null,
         "periodicity" : "calendar-monthly",
         "fixedRates" : [ ],
         "setupFees" : [ ],
         "blockRates" : [ {
           "id" : "32bbc206-36a3-43a9-8767-54f151614390",
-          "pricePerBlock" : {
-            "amount" : 2456,
-            "currency" : "USD"
-          },
           "metricId" : "instances",
           "includedQuantity" : 0,
-          "blockSize" : 1
+          "blockSize" : 1,
+          "pricePerBlock" : {
+            "amount" : 2456.0,
+            "currency" : "USD"
+          }
         } ],
         "allUnitVolumeRates" : [ ],
-        "tierRates" : [ ],
-        "currency" : "USD",
-        "revenueCloudMarketId" : "USD",
-        "group" : {
-          "id" : "0",
-          "validFrom" : "2018-01-15T00:00:00Z"
-        },
-        "checksum" : "c759fdf35ac13be8fd315ee6bf36f5e3ef9363c1"
+        "tierRates" : [ ]
       }, {
         "id" : "224a70ba-45f1-498e-b0ce-4668a555d840",
-        "technicalName" : "rp_postgresql_small_europe",
+        "checksum" : "11f67b80b37eba159e8b7867b5cf02d52381113b",
+        "currency" : "EUR",
+        "revenueCloudMarketId" : "EUR",
+        "group" : {
+          "id" : "0",
+          "validFrom" : "2017-11-01T12:00:00Z",
+          "validUntil" : null
+        },
         "markets" : [ {
           "marketId" : "europe"
         } ],
+        "description" : null,
         "periodicity" : "calendar-monthly",
         "fixedRates" : [ ],
         "setupFees" : [ ],
         "blockRates" : [ {
           "id" : "efa03100-f74e-46fd-8798-f4e44799e426",
-          "pricePerBlock" : {
-            "amount" : 2030,
-            "currency" : "EUR"
-          },
           "metricId" : "instances",
           "includedQuantity" : 0,
-          "blockSize" : 1
+          "blockSize" : 1,
+          "pricePerBlock" : {
+            "amount" : 2030.0,
+            "currency" : "EUR"
+          }
         } ],
         "allUnitVolumeRates" : [ ],
-        "tierRates" : [ ],
-        "currency" : "EUR",
-        "revenueCloudMarketId" : "EUR",
-        "group" : {
-          "id" : "0",
-          "validFrom" : "2017-11-01T00:00:00Z"
-        },
-        "checksum" : "11f67b80b37eba159e8b7867b5cf02d52381113b"
+        "tierRates" : [ ]
       }, {
         "id" : "5d721019-7c7e-4cf0-a447-d56d707ebab8",
-        "technicalName" : "rp_postgresql_small_CAD_150118",
+        "checksum" : "5926aeaf21ff27f4dfd1f5d6f774e3096976f9c2",
+        "currency" : "CAD",
+        "revenueCloudMarketId" : "CAD",
+        "group" : {
+          "id" : "0",
+          "validFrom" : "2018-01-15T12:00:00Z",
+          "validUntil" : null
+        },
         "markets" : [ {
           "marketId" : "CA"
         } ],
+        "description" : null,
         "periodicity" : "calendar-monthly",
         "fixedRates" : [ ],
         "setupFees" : [ ],
         "blockRates" : [ {
           "id" : "9633cc19-ec44-42dd-8615-8fda2e8d90a2",
-          "pricePerBlock" : {
-            "amount" : 3167,
-            "currency" : "CAD"
-          },
           "metricId" : "instances",
           "includedQuantity" : 0,
-          "blockSize" : 1
+          "blockSize" : 1,
+          "pricePerBlock" : {
+            "amount" : 3167.0,
+            "currency" : "CAD"
+          }
         } ],
         "allUnitVolumeRates" : [ ],
-        "tierRates" : [ ],
-        "currency" : "CAD",
-        "revenueCloudMarketId" : "CAD",
-        "group" : {
-          "id" : "0",
-          "validFrom" : "2018-01-15T00:00:00Z"
-        },
-        "checksum" : "5926aeaf21ff27f4dfd1f5d6f774e3096976f9c2"
+        "tierRates" : [ ]
+      } ],
+      "excludedFromBilling" : false,
+      "ratePlansExcludedFromBilling" : [ ],
+      "materialNumberMappings" : [ {
+        "code" : "71c13ab8-ea69-46e8-9ed3-6641f74461b8",
+        "materialNumber" : "8005371",
+        "metricId" : "instances",
+        "type" : "ISP",
+        "chargingPeriod" : "Monthly",
+        "defaultMetric" : true
+      } ],
+      "rcProductMappings" : [ {
+        "metricId" : "instances",
+        "revenueCloudProductId" : "9dab6e47-928a-4785-92c0-d7c2da8d8a90"
+      } ],
+      "rcRatePlanMappings" : [ {
+        "metricId" : "instances",
+        "ratePlanId" : "9d808367-9f46-4971-a4b5-98ed0d03750e",
+        "revenueCloudRatePlanId" : "40d29030-1934-4771-9e93-2a564bbce14f"
+      }, {
+        "metricId" : "instances",
+        "ratePlanId" : "97605f36-0eb8-4694-b7ef-df1a5ae8e56c",
+        "revenueCloudRatePlanId" : "a03b72ae-5b5e-434e-a6d3-47a7e2752b8f"
+      }, {
+        "metricId" : "instances",
+        "ratePlanId" : "8b02f15a-c1de-4ab2-8f11-d4f962e764dc",
+        "revenueCloudRatePlanId" : "d92f72cb-355b-4247-8263-7bcf23734e33"
+      }, {
+        "metricId" : "instances",
+        "ratePlanId" : "6c13c342-60a2-40a0-b453-2d599273cebf",
+        "revenueCloudRatePlanId" : "c64cf61e-a9e7-4791-bf44-b1c8e77dd9c8"
+      }, {
+        "metricId" : "instances",
+        "ratePlanId" : "224a70ba-45f1-498e-b0ce-4668a555d840",
+        "revenueCloudRatePlanId" : "6d9eac6c-3ba1-4cf9-9234-11b2eb9a6e4c"
+      }, {
+        "metricId" : "instances",
+        "ratePlanId" : "5d721019-7c7e-4cf0-a447-d56d707ebab8",
+        "revenueCloudRatePlanId" : "cd323917-8e7e-49b6-8444-96339febfced"
       } ],
       "contractTypes" : [ {
-        "name" : "Subscription",
-        "code" : "subscription"
+        "code" : "subscription",
+        "name" : "Subscription"
       }, {
-        "name" : "Cloud Credits",
-        "code" : "cloudcredits"
+        "code" : "cloudcredits",
+        "name" : "Cloud Credits"
       } ],
       "referencedEntitlementRules" : [ ],
       "features" : [ ],
-      "validFrom" : "2017-11-01T00:00:00Z",
-      "ratePlansExcludedFromBilling" : [ ]
+      "labels" : [ "prod", "stage" ]
     }, {
       "id" : "43868d4e-5b11-4c7e-a70e-bd766ca9f07b",
-      "labels" : [ "prod", "stage" ],
-      "technicalName" : "ent_postgresql_medium",
       "type" : "standard-entitlement-rule",
+      "technicalName" : "ent_postgresql_medium",
+      "validFrom" : "2017-11-01T12:00:00Z",
       "servicePlanId" : "6712c748-f2f2-47e4-abae-2858f6b84d58",
       "technicalAssetId" : {
         "composedId" : {
@@ -14569,102 +14649,103 @@
       }, {
         "technicalAssetVariantId" : "65b3a042-5d2b-4b97-9696-240c12792b71"
       } ],
-      "excludedFromBilling" : false,
-      "materialNumberMappings" : [ {
-        "code" : "8e56ac4f-2a3a-4870-85cb-2f16630e1aeb",
-        "materialNumber" : "8005372",
-        "metricId" : "instances",
-        "type" : "ISP",
-        "chargingPeriod" : "Monthly",
-        "defaultMetric" : true
-      } ],
       "ratePlans" : [ {
         "id" : "dd295c6b-b4eb-4fb3-b222-b498528aaabd",
-        "technicalName" : "rp_postgresql_medium_CAD_150118",
+        "checksum" : "59e1c5452635ac48f70dbbaff5158e0c2ea23e78",
+        "currency" : "CAD",
+        "revenueCloudMarketId" : "CAD",
+        "group" : {
+          "id" : "0",
+          "validFrom" : "2018-01-15T12:00:00Z",
+          "validUntil" : null
+        },
         "markets" : [ {
           "marketId" : "CA"
         } ],
+        "description" : null,
         "periodicity" : "calendar-monthly",
         "fixedRates" : [ ],
         "setupFees" : [ ],
         "blockRates" : [ {
           "id" : "888beebd-7195-46f4-b908-73452aaa07cb",
-          "pricePerBlock" : {
-            "amount" : 5195,
-            "currency" : "CAD"
-          },
           "metricId" : "instances",
           "includedQuantity" : 0,
-          "blockSize" : 1
+          "blockSize" : 1,
+          "pricePerBlock" : {
+            "amount" : 5195.0,
+            "currency" : "CAD"
+          }
         } ],
         "allUnitVolumeRates" : [ ],
-        "tierRates" : [ ],
-        "currency" : "CAD",
-        "revenueCloudMarketId" : "CAD",
-        "group" : {
-          "id" : "0",
-          "validFrom" : "2018-01-15T00:00:00Z"
-        },
-        "checksum" : "59e1c5452635ac48f70dbbaff5158e0c2ea23e78"
+        "tierRates" : [ ]
       }, {
         "id" : "2d400264-8f47-4b28-9426-489212579279",
-        "technicalName" : "rp_postgresql_medium_europe",
+        "checksum" : "1e20783e36e53fb2b445da7b5832e7caa613dbab",
+        "currency" : "EUR",
+        "revenueCloudMarketId" : "EUR",
+        "group" : {
+          "id" : "0",
+          "validFrom" : "2017-11-01T12:00:00Z",
+          "validUntil" : null
+        },
         "markets" : [ {
           "marketId" : "europe"
         } ],
+        "description" : null,
         "periodicity" : "calendar-monthly",
         "fixedRates" : [ ],
         "setupFees" : [ ],
         "blockRates" : [ {
           "id" : "6fcea232-5fb3-4770-b21e-f2b7cc17dd15",
-          "pricePerBlock" : {
-            "amount" : 3330,
-            "currency" : "EUR"
-          },
           "metricId" : "instances",
           "includedQuantity" : 0,
-          "blockSize" : 1
+          "blockSize" : 1,
+          "pricePerBlock" : {
+            "amount" : 3330.0,
+            "currency" : "EUR"
+          }
         } ],
         "allUnitVolumeRates" : [ ],
-        "tierRates" : [ ],
-        "currency" : "EUR",
-        "revenueCloudMarketId" : "EUR",
-        "group" : {
-          "id" : "0",
-          "validFrom" : "2017-11-01T00:00:00Z"
-        },
-        "checksum" : "1e20783e36e53fb2b445da7b5832e7caa613dbab"
+        "tierRates" : [ ]
       }, {
         "id" : "32255f5e-b91b-471d-8acd-9e3cb6821c09",
-        "technicalName" : "rp_postgresql_medium_ca",
+        "checksum" : "7a825a47255ff360b74803f4d66d5b980b4ca740",
+        "currency" : "CAD",
+        "revenueCloudMarketId" : "CAD",
+        "group" : {
+          "id" : "0",
+          "validFrom" : "2017-11-01T12:00:00Z",
+          "validUntil" : null
+        },
         "markets" : [ {
           "marketId" : "CA"
         } ],
+        "description" : null,
         "periodicity" : "calendar-monthly",
         "fixedRates" : [ ],
         "setupFees" : [ ],
         "blockRates" : [ {
           "id" : "2257fd25-a27e-44f5-ae34-ac6a1165209e",
-          "pricePerBlock" : {
-            "amount" : 3902,
-            "currency" : "CAD"
-          },
           "metricId" : "instances",
           "includedQuantity" : 0,
-          "blockSize" : 1
+          "blockSize" : 1,
+          "pricePerBlock" : {
+            "amount" : 3902.0,
+            "currency" : "CAD"
+          }
         } ],
         "allUnitVolumeRates" : [ ],
-        "tierRates" : [ ],
-        "currency" : "CAD",
-        "revenueCloudMarketId" : "CAD",
-        "group" : {
-          "id" : "0",
-          "validFrom" : "2017-11-01T00:00:00Z"
-        },
-        "checksum" : "7a825a47255ff360b74803f4d66d5b980b4ca740"
+        "tierRates" : [ ]
       }, {
         "id" : "a686bcd9-ad4e-41e3-be84-49eee9759d6a",
-        "technicalName" : "rp_postgresql_medium_US",
+        "checksum" : "7eaefb4bc9cf4a5930c2994122387504c38ae671",
+        "currency" : "USD",
+        "revenueCloudMarketId" : "USD",
+        "group" : {
+          "id" : "0",
+          "validFrom" : "2017-11-01T12:00:00Z",
+          "validUntil" : null
+        },
         "markets" : [ {
           "marketId" : "US"
         } ],
@@ -14674,98 +14755,131 @@
         "setupFees" : [ ],
         "blockRates" : [ {
           "id" : "d98733ae-3989-447b-8e46-9c663c009e96",
-          "pricePerBlock" : {
-            "amount" : 3563,
-            "currency" : "USD"
-          },
           "metricId" : "instances",
           "includedQuantity" : 0,
-          "blockSize" : 1
+          "blockSize" : 1,
+          "pricePerBlock" : {
+            "amount" : 3563.0,
+            "currency" : "USD"
+          }
         } ],
         "allUnitVolumeRates" : [ ],
-        "tierRates" : [ ],
-        "currency" : "USD",
-        "revenueCloudMarketId" : "USD",
-        "group" : {
-          "id" : "0",
-          "validFrom" : "2017-11-01T00:00:00Z"
-        },
-        "checksum" : "7eaefb4bc9cf4a5930c2994122387504c38ae671"
+        "tierRates" : [ ]
       }, {
         "id" : "7e66de19-4233-4b08-b41c-4a87e619dc8f",
-        "technicalName" : "rp_postgresql_medium_uk",
+        "checksum" : "7d6720ecb75a6507c16dcadfbdfbafbad5666a0a",
+        "currency" : "GBP",
+        "revenueCloudMarketId" : "GBP",
+        "group" : {
+          "id" : "0",
+          "validFrom" : "2017-11-01T12:00:00Z",
+          "validUntil" : null
+        },
         "markets" : [ {
           "marketId" : "UK"
         } ],
+        "description" : null,
         "periodicity" : "calendar-monthly",
         "fixedRates" : [ ],
         "setupFees" : [ ],
         "blockRates" : [ {
           "id" : "9bc4e0c1-b332-4040-8c47-f44c4d40ab80",
-          "pricePerBlock" : {
-            "amount" : 2431,
-            "currency" : "GBP"
-          },
           "metricId" : "instances",
           "includedQuantity" : 0,
-          "blockSize" : 1
+          "blockSize" : 1,
+          "pricePerBlock" : {
+            "amount" : 2431.0,
+            "currency" : "GBP"
+          }
         } ],
         "allUnitVolumeRates" : [ ],
-        "tierRates" : [ ],
-        "currency" : "GBP",
-        "revenueCloudMarketId" : "GBP",
-        "group" : {
-          "id" : "0",
-          "validFrom" : "2017-11-01T00:00:00Z"
-        },
-        "checksum" : "7d6720ecb75a6507c16dcadfbdfbafbad5666a0a"
+        "tierRates" : [ ]
       }, {
         "id" : "263ba1fc-c611-4c2b-afcb-1a3758b3930d",
-        "technicalName" : "rp_postgresql_medium_USD_150118",
+        "checksum" : "fd9ed7b9d33ad00958d35f932da177f6ff5966da",
+        "currency" : "USD",
+        "revenueCloudMarketId" : "USD",
+        "group" : {
+          "id" : "0",
+          "validFrom" : "2018-01-15T12:00:00Z",
+          "validUntil" : null
+        },
         "markets" : [ {
           "marketId" : "US"
         }, {
           "marketId" : "EM"
         } ],
+        "description" : null,
         "periodicity" : "calendar-monthly",
         "fixedRates" : [ ],
         "setupFees" : [ ],
         "blockRates" : [ {
           "id" : "3ccbc101-5284-4b4a-b907-abe4ece5dfe7",
-          "pricePerBlock" : {
-            "amount" : 4029,
-            "currency" : "USD"
-          },
           "metricId" : "instances",
           "includedQuantity" : 0,
-          "blockSize" : 1
+          "blockSize" : 1,
+          "pricePerBlock" : {
+            "amount" : 4029.0,
+            "currency" : "USD"
+          }
         } ],
         "allUnitVolumeRates" : [ ],
-        "tierRates" : [ ],
-        "currency" : "USD",
-        "revenueCloudMarketId" : "USD",
-        "group" : {
-          "id" : "0",
-          "validFrom" : "2018-01-15T00:00:00Z"
-        },
-        "checksum" : "fd9ed7b9d33ad00958d35f932da177f6ff5966da"
+        "tierRates" : [ ]
+      } ],
+      "excludedFromBilling" : false,
+      "ratePlansExcludedFromBilling" : [ ],
+      "materialNumberMappings" : [ {
+        "code" : "8e56ac4f-2a3a-4870-85cb-2f16630e1aeb",
+        "materialNumber" : "8005372",
+        "metricId" : "instances",
+        "type" : "ISP",
+        "chargingPeriod" : "Monthly",
+        "defaultMetric" : true
+      } ],
+      "rcProductMappings" : [ {
+        "metricId" : "instances",
+        "revenueCloudProductId" : "752303ff-0d76-45d9-a7e3-1b9ee438642f"
+      } ],
+      "rcRatePlanMappings" : [ {
+        "metricId" : "instances",
+        "ratePlanId" : "dd295c6b-b4eb-4fb3-b222-b498528aaabd",
+        "revenueCloudRatePlanId" : "b819c88d-2af2-489d-ab09-1843351058dc"
+      }, {
+        "metricId" : "instances",
+        "ratePlanId" : "2d400264-8f47-4b28-9426-489212579279",
+        "revenueCloudRatePlanId" : "d64e8e86-65b3-48a2-88ba-9a1d852cfd4f"
+      }, {
+        "metricId" : "instances",
+        "ratePlanId" : "32255f5e-b91b-471d-8acd-9e3cb6821c09",
+        "revenueCloudRatePlanId" : "a36d25d5-9d41-414b-9aaf-1873a29c4690"
+      }, {
+        "metricId" : "instances",
+        "ratePlanId" : "a686bcd9-ad4e-41e3-be84-49eee9759d6a",
+        "revenueCloudRatePlanId" : "e636e8a8-91fd-4fe3-b5ba-77045b768b3e"
+      }, {
+        "metricId" : "instances",
+        "ratePlanId" : "7e66de19-4233-4b08-b41c-4a87e619dc8f",
+        "revenueCloudRatePlanId" : "2b832939-5467-49ad-acae-a94478034c7a"
+      }, {
+        "metricId" : "instances",
+        "ratePlanId" : "263ba1fc-c611-4c2b-afcb-1a3758b3930d",
+        "revenueCloudRatePlanId" : "f3a6aa29-a0e8-4a04-baab-7cebc1612b33"
       } ],
       "contractTypes" : [ {
-        "name" : "Subscription",
-        "code" : "subscription"
+        "code" : "subscription",
+        "name" : "Subscription"
       }, {
-        "name" : "Cloud Credits",
-        "code" : "cloudcredits"
+        "code" : "cloudcredits",
+        "name" : "Cloud Credits"
       } ],
       "referencedEntitlementRules" : [ ],
       "features" : [ ],
-      "validFrom" : "2017-11-01T00:00:00Z",
-      "ratePlansExcludedFromBilling" : [ ]
+      "labels" : [ "prod", "stage" ]
     }, {
       "id" : "b6848743-9496-4ce2-b150-275db14b6126",
-      "labels" : [ "prod", "stage" ],
-      "technicalName" : "ent_postgresql_large",
       "type" : "standard-entitlement-rule",
+      "technicalName" : "ent_postgresql_large",
+      "validFrom" : "2017-11-01T12:00:00Z",
       "servicePlanId" : "70819de5-4056-42b5-abe8-20e6c977158c",
       "technicalAssetId" : {
         "composedId" : {
@@ -14779,160 +14893,163 @@
       }, {
         "technicalAssetVariantId" : "93360959-19e3-4a3c-8e2d-f7d9858dc19c"
       } ],
-      "excludedFromBilling" : false,
-      "materialNumberMappings" : [ {
-        "code" : "ce3a6b10-6ae2-4bd2-8bcc-7a21b0f10114",
-        "materialNumber" : "8005373",
-        "metricId" : "instances",
-        "type" : "ISP",
-        "chargingPeriod" : "Monthly",
-        "defaultMetric" : true
-      } ],
       "ratePlans" : [ {
         "id" : "db35b8cd-eab6-465b-a90b-66258a5774ce",
-        "technicalName" : "rp_postgresql_large_ca",
+        "checksum" : "604c26cd17448d06c87fbe3a8b86a8a305bde5a2",
+        "currency" : "CAD",
+        "revenueCloudMarketId" : "CAD",
+        "group" : {
+          "id" : "0",
+          "validFrom" : "2017-11-01T12:00:00Z",
+          "validUntil" : null
+        },
         "markets" : [ {
           "marketId" : "CA"
         } ],
+        "description" : null,
         "periodicity" : "calendar-monthly",
         "fixedRates" : [ ],
         "setupFees" : [ ],
         "blockRates" : [ {
           "id" : "9582a995-f105-4d7c-acda-27f68de7afce",
-          "pricePerBlock" : {
-            "amount" : 6696,
-            "currency" : "CAD"
-          },
           "metricId" : "instances",
           "includedQuantity" : 0,
-          "blockSize" : 1
+          "blockSize" : 1,
+          "pricePerBlock" : {
+            "amount" : 6696.0,
+            "currency" : "CAD"
+          }
         } ],
         "allUnitVolumeRates" : [ ],
-        "tierRates" : [ ],
+        "tierRates" : [ ]
+      }, {
+        "id" : "bbd71297-b1dd-4182-a2f1-2703e73d0dc9",
+        "checksum" : "d581423cea1df361de9c98b38039fa7542a1e19b",
         "currency" : "CAD",
         "revenueCloudMarketId" : "CAD",
         "group" : {
           "id" : "0",
-          "validFrom" : "2017-11-01T00:00:00Z"
+          "validFrom" : "2018-01-15T12:00:00Z",
+          "validUntil" : null
         },
-        "checksum" : "604c26cd17448d06c87fbe3a8b86a8a305bde5a2"
-      }, {
-        "id" : "bbd71297-b1dd-4182-a2f1-2703e73d0dc9",
-        "technicalName" : "rp_postgresql_large_CAD_150118",
         "markets" : [ {
           "marketId" : "CA"
         } ],
+        "description" : null,
         "periodicity" : "calendar-monthly",
         "fixedRates" : [ ],
         "setupFees" : [ ],
         "blockRates" : [ {
           "id" : "747f71fd-2a2c-4932-8fa7-433f720e1a5e",
-          "pricePerBlock" : {
-            "amount" : 7254,
-            "currency" : "CAD"
-          },
           "metricId" : "instances",
           "includedQuantity" : 0,
-          "blockSize" : 1
+          "blockSize" : 1,
+          "pricePerBlock" : {
+            "amount" : 7254.0,
+            "currency" : "CAD"
+          }
         } ],
         "allUnitVolumeRates" : [ ],
-        "tierRates" : [ ],
-        "currency" : "CAD",
-        "revenueCloudMarketId" : "CAD",
-        "group" : {
-          "id" : "0",
-          "validFrom" : "2018-01-15T00:00:00Z"
-        },
-        "checksum" : "d581423cea1df361de9c98b38039fa7542a1e19b"
+        "tierRates" : [ ]
       }, {
         "id" : "4131f821-cd5a-49d5-be16-fa0142c3d371",
-        "technicalName" : "rp_postgresql_large_USD_150118",
+        "checksum" : "756a61ab00ef2e34346732a380be16f47d1a0b9c",
+        "currency" : "USD",
+        "revenueCloudMarketId" : "USD",
+        "group" : {
+          "id" : "0",
+          "validFrom" : "2018-01-15T12:00:00Z",
+          "validUntil" : null
+        },
         "markets" : [ {
           "marketId" : "US"
         }, {
           "marketId" : "EM"
         } ],
+        "description" : null,
         "periodicity" : "calendar-monthly",
         "fixedRates" : [ ],
         "setupFees" : [ ],
         "blockRates" : [ {
           "id" : "f465c791-913f-480d-b6cb-60f9f71603c1",
-          "pricePerBlock" : {
-            "amount" : 5627,
-            "currency" : "USD"
-          },
           "metricId" : "instances",
           "includedQuantity" : 0,
-          "blockSize" : 1
+          "blockSize" : 1,
+          "pricePerBlock" : {
+            "amount" : 5627.0,
+            "currency" : "USD"
+          }
         } ],
         "allUnitVolumeRates" : [ ],
-        "tierRates" : [ ],
-        "currency" : "USD",
-        "revenueCloudMarketId" : "USD",
-        "group" : {
-          "id" : "0",
-          "validFrom" : "2018-01-15T00:00:00Z"
-        },
-        "checksum" : "756a61ab00ef2e34346732a380be16f47d1a0b9c"
+        "tierRates" : [ ]
       }, {
         "id" : "5c2de076-a6fe-43f6-99f6-a28ed556c94d",
-        "technicalName" : "rp_postgresql_large_europe",
+        "checksum" : "dc5ac1e061507fdf75eacee8d7c101334682b2c3",
+        "currency" : "EUR",
+        "revenueCloudMarketId" : "EUR",
+        "group" : {
+          "id" : "0",
+          "validFrom" : "2017-11-01T12:00:00Z",
+          "validUntil" : null
+        },
         "markets" : [ {
           "marketId" : "europe"
         } ],
+        "description" : null,
         "periodicity" : "calendar-monthly",
         "fixedRates" : [ ],
         "setupFees" : [ ],
         "blockRates" : [ {
           "id" : "828cc191-866a-41e5-bb9d-d00b9b711c37",
-          "pricePerBlock" : {
-            "amount" : 4650,
-            "currency" : "EUR"
-          },
           "metricId" : "instances",
           "includedQuantity" : 0,
-          "blockSize" : 1
+          "blockSize" : 1,
+          "pricePerBlock" : {
+            "amount" : 4650.0,
+            "currency" : "EUR"
+          }
         } ],
         "allUnitVolumeRates" : [ ],
-        "tierRates" : [ ],
-        "currency" : "EUR",
-        "revenueCloudMarketId" : "EUR",
-        "group" : {
-          "id" : "0",
-          "validFrom" : "2017-11-01T00:00:00Z"
-        },
-        "checksum" : "dc5ac1e061507fdf75eacee8d7c101334682b2c3"
+        "tierRates" : [ ]
       }, {
         "id" : "33e06c11-0cc4-4af3-9c77-98f80304e581",
-        "technicalName" : "rp_postgresql_large_uk",
+        "checksum" : "5e17fc66ecd02c6fe6241b27eab39fc100b1f982",
+        "currency" : "GBP",
+        "revenueCloudMarketId" : "GBP",
+        "group" : {
+          "id" : "0",
+          "validFrom" : "2017-11-01T12:00:00Z",
+          "validUntil" : null
+        },
         "markets" : [ {
           "marketId" : "UK"
         } ],
+        "description" : null,
         "periodicity" : "calendar-monthly",
         "fixedRates" : [ ],
         "setupFees" : [ ],
         "blockRates" : [ {
           "id" : "05f4fc7f-26c0-4323-8805-f73fa37a7632",
-          "pricePerBlock" : {
-            "amount" : 3395,
-            "currency" : "GBP"
-          },
           "metricId" : "instances",
           "includedQuantity" : 0,
-          "blockSize" : 1
+          "blockSize" : 1,
+          "pricePerBlock" : {
+            "amount" : 3395.0,
+            "currency" : "GBP"
+          }
         } ],
         "allUnitVolumeRates" : [ ],
-        "tierRates" : [ ],
-        "currency" : "GBP",
-        "revenueCloudMarketId" : "GBP",
-        "group" : {
-          "id" : "0",
-          "validFrom" : "2017-11-01T00:00:00Z"
-        },
-        "checksum" : "5e17fc66ecd02c6fe6241b27eab39fc100b1f982"
+        "tierRates" : [ ]
       }, {
         "id" : "de113d44-1e69-4a72-a2cc-fd038746b25b",
-        "technicalName" : "rp_postgresql_large_US_em",
+        "checksum" : "2c960ac0cc9806874c2d75bf06d90488f075bcfb",
+        "currency" : "USD",
+        "revenueCloudMarketId" : "USD",
+        "group" : {
+          "id" : "0",
+          "validFrom" : "2017-11-01T12:00:00Z",
+          "validUntil" : null
+        },
         "markets" : [ {
           "marketId" : "US"
         }, {
@@ -14944,40 +15061,71 @@
         "setupFees" : [ ],
         "blockRates" : [ {
           "id" : "8b8590a6-d82b-4f9b-b661-dea0bdb588a7",
-          "pricePerBlock" : {
-            "amount" : 4976,
-            "currency" : "USD"
-          },
           "metricId" : "instances",
           "includedQuantity" : 0,
-          "blockSize" : 1
+          "blockSize" : 1,
+          "pricePerBlock" : {
+            "amount" : 4976.0,
+            "currency" : "USD"
+          }
         } ],
         "allUnitVolumeRates" : [ ],
-        "tierRates" : [ ],
-        "currency" : "USD",
-        "revenueCloudMarketId" : "USD",
-        "group" : {
-          "id" : "0",
-          "validFrom" : "2017-11-01T00:00:00Z"
-        },
-        "checksum" : "2c960ac0cc9806874c2d75bf06d90488f075bcfb"
+        "tierRates" : [ ]
+      } ],
+      "excludedFromBilling" : false,
+      "ratePlansExcludedFromBilling" : [ ],
+      "materialNumberMappings" : [ {
+        "code" : "ce3a6b10-6ae2-4bd2-8bcc-7a21b0f10114",
+        "materialNumber" : "8005373",
+        "metricId" : "instances",
+        "type" : "ISP",
+        "chargingPeriod" : "Monthly",
+        "defaultMetric" : true
+      } ],
+      "rcProductMappings" : [ {
+        "metricId" : "instances",
+        "revenueCloudProductId" : "19947da3-4630-4ae5-9a05-2f92e87d46f0"
+      } ],
+      "rcRatePlanMappings" : [ {
+        "metricId" : "instances",
+        "ratePlanId" : "db35b8cd-eab6-465b-a90b-66258a5774ce",
+        "revenueCloudRatePlanId" : "8e63ae2d-f953-45a9-8eb4-82101e6c9b62"
+      }, {
+        "metricId" : "instances",
+        "ratePlanId" : "bbd71297-b1dd-4182-a2f1-2703e73d0dc9",
+        "revenueCloudRatePlanId" : "2a26fb51-a134-49da-8239-b7125d0e1518"
+      }, {
+        "metricId" : "instances",
+        "ratePlanId" : "4131f821-cd5a-49d5-be16-fa0142c3d371",
+        "revenueCloudRatePlanId" : "e088f04a-aa3d-4d52-a275-675ed8785401"
+      }, {
+        "metricId" : "instances",
+        "ratePlanId" : "5c2de076-a6fe-43f6-99f6-a28ed556c94d",
+        "revenueCloudRatePlanId" : "86f69809-2473-4a76-ab49-e62f281719eb"
+      }, {
+        "metricId" : "instances",
+        "ratePlanId" : "33e06c11-0cc4-4af3-9c77-98f80304e581",
+        "revenueCloudRatePlanId" : "0447146c-2f82-4e34-8a88-a41aa061a6c7"
+      }, {
+        "metricId" : "instances",
+        "ratePlanId" : "de113d44-1e69-4a72-a2cc-fd038746b25b",
+        "revenueCloudRatePlanId" : "ae3119fc-0d44-48d4-95ce-500775e6305c"
       } ],
       "contractTypes" : [ {
-        "name" : "Subscription",
-        "code" : "subscription"
+        "code" : "subscription",
+        "name" : "Subscription"
       }, {
-        "name" : "Cloud Credits",
-        "code" : "cloudcredits"
+        "code" : "cloudcredits",
+        "name" : "Cloud Credits"
       } ],
       "referencedEntitlementRules" : [ ],
       "features" : [ ],
-      "validFrom" : "2017-11-01T00:00:00Z",
-      "ratePlansExcludedFromBilling" : [ ]
+      "labels" : [ "prod", "stage" ]
     }, {
       "id" : "8db65473-a3dd-ace8-af95-f8f902f72c65",
-      "labels" : [ "prod", "stage" ],
-      "technicalName" : "ent_postgresql_aws-brazil_xsmall",
       "type" : "standard-entitlement-rule",
+      "technicalName" : "ent_postgresql_aws-brazil_xsmall",
+      "validFrom" : "2017-11-01T12:00:00Z",
       "servicePlanId" : "9969790a-9c32-4de6-934d-a3c6cd476789",
       "technicalAssetId" : {
         "composedId" : {
@@ -14989,7 +15137,127 @@
       "technicalAssetVariants" : [ {
         "technicalAssetVariantId" : "035ef631-0567-40ca-be8e-e9228bddb5df"
       } ],
+      "ratePlans" : [ {
+        "id" : "12ff1a79-575d-6f1e-3f89-da558a43c245",
+        "checksum" : "abc2b78cd6968f0f9730d03270288628612fe68f",
+        "currency" : "GBP",
+        "revenueCloudMarketId" : "GBP",
+        "group" : {
+          "id" : "0",
+          "validFrom" : "2018-03-15T12:00:00Z",
+          "validUntil" : null
+        },
+        "markets" : [ {
+          "marketId" : "UK"
+        } ],
+        "description" : null,
+        "periodicity" : "calendar-monthly",
+        "fixedRates" : [ ],
+        "setupFees" : [ ],
+        "blockRates" : [ {
+          "id" : "e4ed1561-6ff7-43cc-8cd7-69861b5b7355",
+          "metricId" : "instances",
+          "includedQuantity" : 0,
+          "blockSize" : 1,
+          "pricePerBlock" : {
+            "amount" : 767.0,
+            "currency" : "GBP"
+          }
+        } ],
+        "allUnitVolumeRates" : [ ],
+        "tierRates" : [ ]
+      }, {
+        "id" : "70efe099-2953-55a9-3716-709ee1af22dd",
+        "checksum" : "a9412795646e4d4b8928d2a366ae8c0233a05a12",
+        "currency" : "CAD",
+        "revenueCloudMarketId" : "CAD",
+        "group" : {
+          "id" : "0",
+          "validFrom" : "2018-03-15T12:00:00Z",
+          "validUntil" : null
+        },
+        "markets" : [ {
+          "marketId" : "CA"
+        } ],
+        "description" : null,
+        "periodicity" : "calendar-monthly",
+        "fixedRates" : [ ],
+        "setupFees" : [ ],
+        "blockRates" : [ {
+          "id" : "3fcc2ee3-6141-4ac2-8ce6-752db35d8acc",
+          "metricId" : "instances",
+          "includedQuantity" : 0,
+          "blockSize" : 1,
+          "pricePerBlock" : {
+            "amount" : 1638.0,
+            "currency" : "CAD"
+          }
+        } ],
+        "allUnitVolumeRates" : [ ],
+        "tierRates" : [ ]
+      }, {
+        "id" : "1922edea-d33e-f45e-e966-1246753058ac",
+        "checksum" : "3c9d6b34ca7c47a373c49e629eaa57e7a355ed7c",
+        "currency" : "USD",
+        "revenueCloudMarketId" : "USD",
+        "group" : {
+          "id" : "0",
+          "validFrom" : "2018-03-15T12:00:00Z",
+          "validUntil" : null
+        },
+        "markets" : [ {
+          "marketId" : "US"
+        }, {
+          "marketId" : "EM"
+        } ],
+        "description" : null,
+        "periodicity" : "calendar-monthly",
+        "fixedRates" : [ ],
+        "setupFees" : [ ],
+        "blockRates" : [ {
+          "id" : "57acc027-e0d5-4dcc-bcf6-5f6a8fb4ee60",
+          "metricId" : "instances",
+          "includedQuantity" : 0,
+          "blockSize" : 1,
+          "pricePerBlock" : {
+            "amount" : 1271.0,
+            "currency" : "USD"
+          }
+        } ],
+        "allUnitVolumeRates" : [ ],
+        "tierRates" : [ ]
+      }, {
+        "id" : "05dc7e3a-f616-0381-dd25-eece15909feb",
+        "checksum" : "9483e1078490a2374ed72b438ac6a4e1997f6b54",
+        "currency" : "EUR",
+        "revenueCloudMarketId" : "EUR",
+        "group" : {
+          "id" : "0",
+          "validFrom" : "2018-03-15T12:00:00Z",
+          "validUntil" : null
+        },
+        "markets" : [ {
+          "marketId" : "europe"
+        } ],
+        "description" : null,
+        "periodicity" : "calendar-monthly",
+        "fixedRates" : [ ],
+        "setupFees" : [ ],
+        "blockRates" : [ {
+          "id" : "aff7acf1-0f8f-4a6c-a61d-847d7b2c4ee9",
+          "metricId" : "instances",
+          "includedQuantity" : 0,
+          "blockSize" : 1,
+          "pricePerBlock" : {
+            "amount" : 1050.0,
+            "currency" : "EUR"
+          }
+        } ],
+        "allUnitVolumeRates" : [ ],
+        "tierRates" : [ ]
+      } ],
       "excludedFromBilling" : false,
+      "ratePlansExcludedFromBilling" : [ ],
       "materialNumberMappings" : [ {
         "code" : "6b7e4b31-4c63-4f74-ba04-d37693e3e78d",
         "materialNumber" : "8005905",
@@ -14998,137 +15266,42 @@
         "chargingPeriod" : "Monthly",
         "defaultMetric" : false
       } ],
-      "ratePlans" : [ {
-        "id" : "12ff1a79-575d-6f1e-3f89-da558a43c245",
-        "technicalName" : "rp_postgresql_xsmall_GBP",
-        "markets" : [ {
-          "marketId" : "UK"
-        } ],
-        "periodicity" : "calendar-monthly",
-        "fixedRates" : [ ],
-        "setupFees" : [ ],
-        "blockRates" : [ {
-          "id" : "e4ed1561-6ff7-43cc-8cd7-69861b5b7355",
-          "pricePerBlock" : {
-            "amount" : 767,
-            "currency" : "GBP"
-          },
-          "metricId" : "instances",
-          "includedQuantity" : 0,
-          "blockSize" : 1
-        } ],
-        "allUnitVolumeRates" : [ ],
-        "tierRates" : [ ],
-        "currency" : "GBP",
-        "revenueCloudMarketId" : "GBP",
-        "group" : {
-          "id" : "0",
-          "validFrom" : "2018-03-15T00:00:00Z"
-        },
-        "checksum" : "abc2b78cd6968f0f9730d03270288628612fe68f"
+      "rcProductMappings" : [ {
+        "metricId" : "instances",
+        "revenueCloudProductId" : "3c6c96f1-c1b7-41fc-8468-615c2ea5e612"
+      } ],
+      "rcRatePlanMappings" : [ {
+        "metricId" : "instances",
+        "ratePlanId" : "12ff1a79-575d-6f1e-3f89-da558a43c245",
+        "revenueCloudRatePlanId" : "b8bd75bc-1cf6-4372-bb99-95a12886b517"
       }, {
-        "id" : "70efe099-2953-55a9-3716-709ee1af22dd",
-        "technicalName" : "rp_postgresql_xsmall_CAD",
-        "markets" : [ {
-          "marketId" : "CA"
-        } ],
-        "periodicity" : "calendar-monthly",
-        "fixedRates" : [ ],
-        "setupFees" : [ ],
-        "blockRates" : [ {
-          "id" : "3fcc2ee3-6141-4ac2-8ce6-752db35d8acc",
-          "pricePerBlock" : {
-            "amount" : 1638,
-            "currency" : "CAD"
-          },
-          "metricId" : "instances",
-          "includedQuantity" : 0,
-          "blockSize" : 1
-        } ],
-        "allUnitVolumeRates" : [ ],
-        "tierRates" : [ ],
-        "currency" : "CAD",
-        "revenueCloudMarketId" : "CAD",
-        "group" : {
-          "id" : "0",
-          "validFrom" : "2018-03-15T00:00:00Z"
-        },
-        "checksum" : "a9412795646e4d4b8928d2a366ae8c0233a05a12"
+        "metricId" : "instances",
+        "ratePlanId" : "70efe099-2953-55a9-3716-709ee1af22dd",
+        "revenueCloudRatePlanId" : "50e0344f-bc8d-4991-8903-6affb32ea4a8"
       }, {
-        "id" : "1922edea-d33e-f45e-e966-1246753058ac",
-        "technicalName" : "rp_postgresql_xsmall_USD",
-        "markets" : [ {
-          "marketId" : "US"
-        }, {
-          "marketId" : "EM"
-        } ],
-        "periodicity" : "calendar-monthly",
-        "fixedRates" : [ ],
-        "setupFees" : [ ],
-        "blockRates" : [ {
-          "id" : "57acc027-e0d5-4dcc-bcf6-5f6a8fb4ee60",
-          "pricePerBlock" : {
-            "amount" : 1271,
-            "currency" : "USD"
-          },
-          "metricId" : "instances",
-          "includedQuantity" : 0,
-          "blockSize" : 1
-        } ],
-        "allUnitVolumeRates" : [ ],
-        "tierRates" : [ ],
-        "currency" : "USD",
-        "revenueCloudMarketId" : "USD",
-        "group" : {
-          "id" : "0",
-          "validFrom" : "2018-03-15T00:00:00Z"
-        },
-        "checksum" : "3c9d6b34ca7c47a373c49e629eaa57e7a355ed7c"
+        "metricId" : "instances",
+        "ratePlanId" : "1922edea-d33e-f45e-e966-1246753058ac",
+        "revenueCloudRatePlanId" : "b5b83da2-1448-497a-8f85-8935106f2083"
       }, {
-        "id" : "05dc7e3a-f616-0381-dd25-eece15909feb",
-        "technicalName" : "rp_postgresql_xsmall_EUR",
-        "markets" : [ {
-          "marketId" : "europe"
-        } ],
-        "periodicity" : "calendar-monthly",
-        "fixedRates" : [ ],
-        "setupFees" : [ ],
-        "blockRates" : [ {
-          "id" : "aff7acf1-0f8f-4a6c-a61d-847d7b2c4ee9",
-          "pricePerBlock" : {
-            "amount" : 1050,
-            "currency" : "EUR"
-          },
-          "metricId" : "instances",
-          "includedQuantity" : 0,
-          "blockSize" : 1
-        } ],
-        "allUnitVolumeRates" : [ ],
-        "tierRates" : [ ],
-        "currency" : "EUR",
-        "revenueCloudMarketId" : "EUR",
-        "group" : {
-          "id" : "0",
-          "validFrom" : "2018-03-15T00:00:00Z"
-        },
-        "checksum" : "9483e1078490a2374ed72b438ac6a4e1997f6b54"
+        "metricId" : "instances",
+        "ratePlanId" : "05dc7e3a-f616-0381-dd25-eece15909feb",
+        "revenueCloudRatePlanId" : "9c6575b7-7b6a-495c-901e-47f7d8441e68"
       } ],
       "contractTypes" : [ {
-        "name" : "Subscription",
-        "code" : "subscription"
+        "code" : "subscription",
+        "name" : "Subscription"
       }, {
-        "name" : "Cloud Credits",
-        "code" : "cloudcredits"
+        "code" : "cloudcredits",
+        "name" : "Cloud Credits"
       } ],
       "referencedEntitlementRules" : [ ],
       "features" : [ ],
-      "validFrom" : "2017-11-01T00:00:00Z",
-      "ratePlansExcludedFromBilling" : [ ]
+      "labels" : [ "prod", "stage" ]
     }, {
       "id" : "39e178de-92ca-e364-a893-48820895c2ab",
-      "labels" : [ "prod", "stage" ],
-      "technicalName" : "ent_postgresql_aws-brazil_small",
       "type" : "standard-entitlement-rule",
+      "technicalName" : "ent_postgresql_aws-brazil_small",
+      "validFrom" : "2017-11-01T12:00:00Z",
       "servicePlanId" : "21e504c2-213e-44b6-8399-896d3cc06ce1",
       "technicalAssetId" : {
         "composedId" : {
@@ -15140,7 +15313,127 @@
       "technicalAssetVariants" : [ {
         "technicalAssetVariantId" : "33a36436-73e9-467b-9ffa-068c4c6926f8"
       } ],
+      "ratePlans" : [ {
+        "id" : "659873d0-c22a-32a8-75fa-2386def29f17",
+        "checksum" : "731396747633964eb823d1a66f01669b1a03f4cd",
+        "currency" : "USD",
+        "revenueCloudMarketId" : "USD",
+        "group" : {
+          "id" : "0",
+          "validFrom" : "2018-03-15T12:00:00Z",
+          "validUntil" : null
+        },
+        "markets" : [ {
+          "marketId" : "US"
+        }, {
+          "marketId" : "EM"
+        } ],
+        "description" : null,
+        "periodicity" : "calendar-monthly",
+        "fixedRates" : [ ],
+        "setupFees" : [ ],
+        "blockRates" : [ {
+          "id" : "433b5405-f416-4690-9f85-830e72af7642",
+          "metricId" : "instances",
+          "includedQuantity" : 0,
+          "blockSize" : 1,
+          "pricePerBlock" : {
+            "amount" : 2844.0,
+            "currency" : "USD"
+          }
+        } ],
+        "allUnitVolumeRates" : [ ],
+        "tierRates" : [ ]
+      }, {
+        "id" : "df17a9eb-31fc-cfb1-a7f5-433c7f36f0ad",
+        "checksum" : "c4dcb78d1a3ee0d2fbfa42d6cf13b62f2e1d14fa",
+        "currency" : "GBP",
+        "revenueCloudMarketId" : "GBP",
+        "group" : {
+          "id" : "0",
+          "validFrom" : "2018-03-15T12:00:00Z",
+          "validUntil" : null
+        },
+        "markets" : [ {
+          "marketId" : "UK"
+        } ],
+        "description" : null,
+        "periodicity" : "calendar-monthly",
+        "fixedRates" : [ ],
+        "setupFees" : [ ],
+        "blockRates" : [ {
+          "id" : "4ac7fe3c-8f58-4e90-9c3c-ead4aaa4f63f",
+          "metricId" : "instances",
+          "includedQuantity" : 0,
+          "blockSize" : 1,
+          "pricePerBlock" : {
+            "amount" : 1716.0,
+            "currency" : "GBP"
+          }
+        } ],
+        "allUnitVolumeRates" : [ ],
+        "tierRates" : [ ]
+      }, {
+        "id" : "444d1989-cdd0-f0f2-6cc7-e5720a8b51c4",
+        "checksum" : "e08fe4eeb0b0e1d286e9e7e8a32ce1943f346a62",
+        "currency" : "CAD",
+        "revenueCloudMarketId" : "CAD",
+        "group" : {
+          "id" : "0",
+          "validFrom" : "2018-03-15T12:00:00Z",
+          "validUntil" : null
+        },
+        "markets" : [ {
+          "marketId" : "CA"
+        } ],
+        "description" : null,
+        "periodicity" : "calendar-monthly",
+        "fixedRates" : [ ],
+        "setupFees" : [ ],
+        "blockRates" : [ {
+          "id" : "00c491ee-2166-4dc6-8960-dae57fb5c2c6",
+          "metricId" : "instances",
+          "includedQuantity" : 0,
+          "blockSize" : 1,
+          "pricePerBlock" : {
+            "amount" : 3666.0,
+            "currency" : "CAD"
+          }
+        } ],
+        "allUnitVolumeRates" : [ ],
+        "tierRates" : [ ]
+      }, {
+        "id" : "57f45057-149f-2d12-ff95-2553dad5f725",
+        "checksum" : "38cb739492adb2f51b73533196efdd8d96133392",
+        "currency" : "EUR",
+        "revenueCloudMarketId" : "EUR",
+        "group" : {
+          "id" : "0",
+          "validFrom" : "2018-03-15T12:00:00Z",
+          "validUntil" : null
+        },
+        "markets" : [ {
+          "marketId" : "europe"
+        } ],
+        "description" : null,
+        "periodicity" : "calendar-monthly",
+        "fixedRates" : [ ],
+        "setupFees" : [ ],
+        "blockRates" : [ {
+          "id" : "807dfb26-2aff-4196-adab-45beff873d9c",
+          "metricId" : "instances",
+          "includedQuantity" : 0,
+          "blockSize" : 1,
+          "pricePerBlock" : {
+            "amount" : 2350.0,
+            "currency" : "EUR"
+          }
+        } ],
+        "allUnitVolumeRates" : [ ],
+        "tierRates" : [ ]
+      } ],
       "excludedFromBilling" : false,
+      "ratePlansExcludedFromBilling" : [ ],
       "materialNumberMappings" : [ {
         "code" : "98fa23e7-3dad-4bf5-a989-abf10324f588",
         "materialNumber" : "8005906",
@@ -15149,137 +15442,42 @@
         "chargingPeriod" : "Monthly",
         "defaultMetric" : false
       } ],
-      "ratePlans" : [ {
-        "id" : "659873d0-c22a-32a8-75fa-2386def29f17",
-        "technicalName" : "rp_postgresql_small_USD",
-        "markets" : [ {
-          "marketId" : "US"
-        }, {
-          "marketId" : "EM"
-        } ],
-        "periodicity" : "calendar-monthly",
-        "fixedRates" : [ ],
-        "setupFees" : [ ],
-        "blockRates" : [ {
-          "id" : "433b5405-f416-4690-9f85-830e72af7642",
-          "pricePerBlock" : {
-            "amount" : 2844,
-            "currency" : "USD"
-          },
-          "metricId" : "instances",
-          "includedQuantity" : 0,
-          "blockSize" : 1
-        } ],
-        "allUnitVolumeRates" : [ ],
-        "tierRates" : [ ],
-        "currency" : "USD",
-        "revenueCloudMarketId" : "USD",
-        "group" : {
-          "id" : "0",
-          "validFrom" : "2018-03-15T00:00:00Z"
-        },
-        "checksum" : "731396747633964eb823d1a66f01669b1a03f4cd"
+      "rcProductMappings" : [ {
+        "metricId" : "instances",
+        "revenueCloudProductId" : "9e5adf7e-7f5e-4e32-9bcf-4112fee4681e"
+      } ],
+      "rcRatePlanMappings" : [ {
+        "metricId" : "instances",
+        "ratePlanId" : "659873d0-c22a-32a8-75fa-2386def29f17",
+        "revenueCloudRatePlanId" : "a8bd2e7e-d3e5-4d43-9db5-4bc26e67c549"
       }, {
-        "id" : "df17a9eb-31fc-cfb1-a7f5-433c7f36f0ad",
-        "technicalName" : "rp_postgresql_small_GBP",
-        "markets" : [ {
-          "marketId" : "UK"
-        } ],
-        "periodicity" : "calendar-monthly",
-        "fixedRates" : [ ],
-        "setupFees" : [ ],
-        "blockRates" : [ {
-          "id" : "4ac7fe3c-8f58-4e90-9c3c-ead4aaa4f63f",
-          "pricePerBlock" : {
-            "amount" : 1716,
-            "currency" : "GBP"
-          },
-          "metricId" : "instances",
-          "includedQuantity" : 0,
-          "blockSize" : 1
-        } ],
-        "allUnitVolumeRates" : [ ],
-        "tierRates" : [ ],
-        "currency" : "GBP",
-        "revenueCloudMarketId" : "GBP",
-        "group" : {
-          "id" : "0",
-          "validFrom" : "2018-03-15T00:00:00Z"
-        },
-        "checksum" : "c4dcb78d1a3ee0d2fbfa42d6cf13b62f2e1d14fa"
+        "metricId" : "instances",
+        "ratePlanId" : "df17a9eb-31fc-cfb1-a7f5-433c7f36f0ad",
+        "revenueCloudRatePlanId" : "643c3e31-6617-4f4f-81ce-98178dda6f9a"
       }, {
-        "id" : "444d1989-cdd0-f0f2-6cc7-e5720a8b51c4",
-        "technicalName" : "rp_postgresql_small_CAD",
-        "markets" : [ {
-          "marketId" : "CA"
-        } ],
-        "periodicity" : "calendar-monthly",
-        "fixedRates" : [ ],
-        "setupFees" : [ ],
-        "blockRates" : [ {
-          "id" : "00c491ee-2166-4dc6-8960-dae57fb5c2c6",
-          "pricePerBlock" : {
-            "amount" : 3666,
-            "currency" : "CAD"
-          },
-          "metricId" : "instances",
-          "includedQuantity" : 0,
-          "blockSize" : 1
-        } ],
-        "allUnitVolumeRates" : [ ],
-        "tierRates" : [ ],
-        "currency" : "CAD",
-        "revenueCloudMarketId" : "CAD",
-        "group" : {
-          "id" : "0",
-          "validFrom" : "2018-03-15T00:00:00Z"
-        },
-        "checksum" : "e08fe4eeb0b0e1d286e9e7e8a32ce1943f346a62"
+        "metricId" : "instances",
+        "ratePlanId" : "444d1989-cdd0-f0f2-6cc7-e5720a8b51c4",
+        "revenueCloudRatePlanId" : "0889b15a-be1d-427a-bad6-12c164deaf50"
       }, {
-        "id" : "57f45057-149f-2d12-ff95-2553dad5f725",
-        "technicalName" : "rp_postgresql_small_EUR",
-        "markets" : [ {
-          "marketId" : "europe"
-        } ],
-        "periodicity" : "calendar-monthly",
-        "fixedRates" : [ ],
-        "setupFees" : [ ],
-        "blockRates" : [ {
-          "id" : "807dfb26-2aff-4196-adab-45beff873d9c",
-          "pricePerBlock" : {
-            "amount" : 2350,
-            "currency" : "EUR"
-          },
-          "metricId" : "instances",
-          "includedQuantity" : 0,
-          "blockSize" : 1
-        } ],
-        "allUnitVolumeRates" : [ ],
-        "tierRates" : [ ],
-        "currency" : "EUR",
-        "revenueCloudMarketId" : "EUR",
-        "group" : {
-          "id" : "0",
-          "validFrom" : "2018-03-15T00:00:00Z"
-        },
-        "checksum" : "38cb739492adb2f51b73533196efdd8d96133392"
+        "metricId" : "instances",
+        "ratePlanId" : "57f45057-149f-2d12-ff95-2553dad5f725",
+        "revenueCloudRatePlanId" : "f1f41c36-10c1-4154-809e-040fe8b1ccf7"
       } ],
       "contractTypes" : [ {
-        "name" : "Subscription",
-        "code" : "subscription"
+        "code" : "subscription",
+        "name" : "Subscription"
       }, {
-        "name" : "Cloud Credits",
-        "code" : "cloudcredits"
+        "code" : "cloudcredits",
+        "name" : "Cloud Credits"
       } ],
       "referencedEntitlementRules" : [ ],
       "features" : [ ],
-      "validFrom" : "2017-11-01T00:00:00Z",
-      "ratePlansExcludedFromBilling" : [ ]
+      "labels" : [ "prod", "stage" ]
     }, {
       "id" : "bfbdb26f-7bcb-a8af-883a-f45f8ffb1fad",
-      "labels" : [ "prod", "stage" ],
-      "technicalName" : "ent_postgresql_aws-brazil_medium",
       "type" : "standard-entitlement-rule",
+      "technicalName" : "ent_postgresql_aws-brazil_medium",
+      "validFrom" : "2017-11-01T12:00:00Z",
       "servicePlanId" : "6712c748-f2f2-47e4-abae-2858f6b84d58",
       "technicalAssetId" : {
         "composedId" : {
@@ -15291,7 +15489,127 @@
       "technicalAssetVariants" : [ {
         "technicalAssetVariantId" : "5ff0a354-77d8-4bbd-a592-a63749fa23b2"
       } ],
+      "ratePlans" : [ {
+        "id" : "7e5c8a1e-0ea4-6f21-5f41-8928eb45a109",
+        "checksum" : "afe3deecfbc1b6f4aa918a9732c8bb3f1fc44321",
+        "currency" : "EUR",
+        "revenueCloudMarketId" : "EUR",
+        "group" : {
+          "id" : "0",
+          "validFrom" : "2018-03-15T12:00:00Z",
+          "validUntil" : null
+        },
+        "markets" : [ {
+          "marketId" : "europe"
+        } ],
+        "description" : null,
+        "periodicity" : "calendar-monthly",
+        "fixedRates" : [ ],
+        "setupFees" : [ ],
+        "blockRates" : [ {
+          "id" : "7cb50aef-0c9d-4297-9bb3-86f151ea8691",
+          "metricId" : "instances",
+          "includedQuantity" : 0,
+          "blockSize" : 1,
+          "pricePerBlock" : {
+            "amount" : 3850.0,
+            "currency" : "EUR"
+          }
+        } ],
+        "allUnitVolumeRates" : [ ],
+        "tierRates" : [ ]
+      }, {
+        "id" : "33b9aefa-2f2c-c5db-97c8-034e0d20e5dc",
+        "checksum" : "5816bdce76f5ac741f9da159fe4524e9167bf09d",
+        "currency" : "CAD",
+        "revenueCloudMarketId" : "CAD",
+        "group" : {
+          "id" : "0",
+          "validFrom" : "2018-03-15T12:00:00Z",
+          "validUntil" : null
+        },
+        "markets" : [ {
+          "marketId" : "CA"
+        } ],
+        "description" : null,
+        "periodicity" : "calendar-monthly",
+        "fixedRates" : [ ],
+        "setupFees" : [ ],
+        "blockRates" : [ {
+          "id" : "a71434c5-90bf-448d-89c4-22840acb9acc",
+          "metricId" : "instances",
+          "includedQuantity" : 0,
+          "blockSize" : 1,
+          "pricePerBlock" : {
+            "amount" : 6006.0,
+            "currency" : "CAD"
+          }
+        } ],
+        "allUnitVolumeRates" : [ ],
+        "tierRates" : [ ]
+      }, {
+        "id" : "1703444f-e823-5830-5e7a-252410524b75",
+        "checksum" : "040307ce070b4cc35bf4e29f96df8fbd530eb221",
+        "currency" : "GBP",
+        "revenueCloudMarketId" : "GBP",
+        "group" : {
+          "id" : "0",
+          "validFrom" : "2018-03-15T12:00:00Z",
+          "validUntil" : null
+        },
+        "markets" : [ {
+          "marketId" : "UK"
+        } ],
+        "description" : null,
+        "periodicity" : "calendar-monthly",
+        "fixedRates" : [ ],
+        "setupFees" : [ ],
+        "blockRates" : [ {
+          "id" : "69605c13-bbca-494d-aaa8-0203633b933f",
+          "metricId" : "instances",
+          "includedQuantity" : 0,
+          "blockSize" : 1,
+          "pricePerBlock" : {
+            "amount" : 2811.0,
+            "currency" : "GBP"
+          }
+        } ],
+        "allUnitVolumeRates" : [ ],
+        "tierRates" : [ ]
+      }, {
+        "id" : "b13f7bc0-ca88-4ec5-557b-89feaaa2f199",
+        "checksum" : "abda8354b3d045d84e7f9fd19a91e4c2ca99c5ce",
+        "currency" : "USD",
+        "revenueCloudMarketId" : "USD",
+        "group" : {
+          "id" : "0",
+          "validFrom" : "2018-03-15T12:00:00Z",
+          "validUntil" : null
+        },
+        "markets" : [ {
+          "marketId" : "US"
+        }, {
+          "marketId" : "EM"
+        } ],
+        "description" : null,
+        "periodicity" : "calendar-monthly",
+        "fixedRates" : [ ],
+        "setupFees" : [ ],
+        "blockRates" : [ {
+          "id" : "08a57363-08be-4169-98ab-2c3d23792056",
+          "metricId" : "instances",
+          "includedQuantity" : 0,
+          "blockSize" : 1,
+          "pricePerBlock" : {
+            "amount" : 4659.0,
+            "currency" : "USD"
+          }
+        } ],
+        "allUnitVolumeRates" : [ ],
+        "tierRates" : [ ]
+      } ],
       "excludedFromBilling" : false,
+      "ratePlansExcludedFromBilling" : [ ],
       "materialNumberMappings" : [ {
         "code" : "ddddf549-fbe9-4c71-a214-9e962b580157",
         "materialNumber" : "8005907",
@@ -15300,137 +15618,42 @@
         "chargingPeriod" : "Monthly",
         "defaultMetric" : false
       } ],
-      "ratePlans" : [ {
-        "id" : "7e5c8a1e-0ea4-6f21-5f41-8928eb45a109",
-        "technicalName" : "rp_postgresql_medium_EUR",
-        "markets" : [ {
-          "marketId" : "europe"
-        } ],
-        "periodicity" : "calendar-monthly",
-        "fixedRates" : [ ],
-        "setupFees" : [ ],
-        "blockRates" : [ {
-          "id" : "7cb50aef-0c9d-4297-9bb3-86f151ea8691",
-          "pricePerBlock" : {
-            "amount" : 3850,
-            "currency" : "EUR"
-          },
-          "metricId" : "instances",
-          "includedQuantity" : 0,
-          "blockSize" : 1
-        } ],
-        "allUnitVolumeRates" : [ ],
-        "tierRates" : [ ],
-        "currency" : "EUR",
-        "revenueCloudMarketId" : "EUR",
-        "group" : {
-          "id" : "0",
-          "validFrom" : "2018-03-15T00:00:00Z"
-        },
-        "checksum" : "afe3deecfbc1b6f4aa918a9732c8bb3f1fc44321"
+      "rcProductMappings" : [ {
+        "metricId" : "instances",
+        "revenueCloudProductId" : "6af4ad40-5959-4f88-95e8-c6a2a61024d9"
+      } ],
+      "rcRatePlanMappings" : [ {
+        "metricId" : "instances",
+        "ratePlanId" : "7e5c8a1e-0ea4-6f21-5f41-8928eb45a109",
+        "revenueCloudRatePlanId" : "0e2a1580-5654-46d0-ac8a-b0e3b1782c14"
       }, {
-        "id" : "33b9aefa-2f2c-c5db-97c8-034e0d20e5dc",
-        "technicalName" : "rp_postgresql_medium_CAD",
-        "markets" : [ {
-          "marketId" : "CA"
-        } ],
-        "periodicity" : "calendar-monthly",
-        "fixedRates" : [ ],
-        "setupFees" : [ ],
-        "blockRates" : [ {
-          "id" : "a71434c5-90bf-448d-89c4-22840acb9acc",
-          "pricePerBlock" : {
-            "amount" : 6006,
-            "currency" : "CAD"
-          },
-          "metricId" : "instances",
-          "includedQuantity" : 0,
-          "blockSize" : 1
-        } ],
-        "allUnitVolumeRates" : [ ],
-        "tierRates" : [ ],
-        "currency" : "CAD",
-        "revenueCloudMarketId" : "CAD",
-        "group" : {
-          "id" : "0",
-          "validFrom" : "2018-03-15T00:00:00Z"
-        },
-        "checksum" : "5816bdce76f5ac741f9da159fe4524e9167bf09d"
+        "metricId" : "instances",
+        "ratePlanId" : "33b9aefa-2f2c-c5db-97c8-034e0d20e5dc",
+        "revenueCloudRatePlanId" : "37a2cefc-9fa3-4ad0-b240-0884d225372d"
       }, {
-        "id" : "1703444f-e823-5830-5e7a-252410524b75",
-        "technicalName" : "rp_postgresql_medium_GBP",
-        "markets" : [ {
-          "marketId" : "UK"
-        } ],
-        "periodicity" : "calendar-monthly",
-        "fixedRates" : [ ],
-        "setupFees" : [ ],
-        "blockRates" : [ {
-          "id" : "69605c13-bbca-494d-aaa8-0203633b933f",
-          "pricePerBlock" : {
-            "amount" : 2811,
-            "currency" : "GBP"
-          },
-          "metricId" : "instances",
-          "includedQuantity" : 0,
-          "blockSize" : 1
-        } ],
-        "allUnitVolumeRates" : [ ],
-        "tierRates" : [ ],
-        "currency" : "GBP",
-        "revenueCloudMarketId" : "GBP",
-        "group" : {
-          "id" : "0",
-          "validFrom" : "2018-03-15T00:00:00Z"
-        },
-        "checksum" : "040307ce070b4cc35bf4e29f96df8fbd530eb221"
+        "metricId" : "instances",
+        "ratePlanId" : "1703444f-e823-5830-5e7a-252410524b75",
+        "revenueCloudRatePlanId" : "01308f7c-92ab-4bcc-bc79-93d4132ab55d"
       }, {
-        "id" : "b13f7bc0-ca88-4ec5-557b-89feaaa2f199",
-        "technicalName" : "rp_postgresql_medium_USD",
-        "markets" : [ {
-          "marketId" : "US"
-        }, {
-          "marketId" : "EM"
-        } ],
-        "periodicity" : "calendar-monthly",
-        "fixedRates" : [ ],
-        "setupFees" : [ ],
-        "blockRates" : [ {
-          "id" : "08a57363-08be-4169-98ab-2c3d23792056",
-          "pricePerBlock" : {
-            "amount" : 4659,
-            "currency" : "USD"
-          },
-          "metricId" : "instances",
-          "includedQuantity" : 0,
-          "blockSize" : 1
-        } ],
-        "allUnitVolumeRates" : [ ],
-        "tierRates" : [ ],
-        "currency" : "USD",
-        "revenueCloudMarketId" : "USD",
-        "group" : {
-          "id" : "0",
-          "validFrom" : "2018-03-15T00:00:00Z"
-        },
-        "checksum" : "abda8354b3d045d84e7f9fd19a91e4c2ca99c5ce"
+        "metricId" : "instances",
+        "ratePlanId" : "b13f7bc0-ca88-4ec5-557b-89feaaa2f199",
+        "revenueCloudRatePlanId" : "07a0cbcd-7e10-4702-9fe3-b609d09880e2"
       } ],
       "contractTypes" : [ {
-        "name" : "Subscription",
-        "code" : "subscription"
+        "code" : "subscription",
+        "name" : "Subscription"
       }, {
-        "name" : "Cloud Credits",
-        "code" : "cloudcredits"
+        "code" : "cloudcredits",
+        "name" : "Cloud Credits"
       } ],
       "referencedEntitlementRules" : [ ],
       "features" : [ ],
-      "validFrom" : "2017-11-01T00:00:00Z",
-      "ratePlansExcludedFromBilling" : [ ]
+      "labels" : [ "prod", "stage" ]
     }, {
       "id" : "49e1124c-1270-04fc-f381-9151d58a0947",
-      "labels" : [ "prod", "stage" ],
-      "technicalName" : "ent_postgresql_aws-brazil_large",
       "type" : "standard-entitlement-rule",
+      "technicalName" : "ent_postgresql_aws-brazil_large",
+      "validFrom" : "2017-11-01T12:00:00Z",
       "servicePlanId" : "70819de5-4056-42b5-abe8-20e6c977158c",
       "technicalAssetId" : {
         "composedId" : {
@@ -15442,7 +15665,127 @@
       "technicalAssetVariants" : [ {
         "technicalAssetVariantId" : "9ae3a213-1ea0-48ab-9b3d-d8d0419ff6e4"
       } ],
+      "ratePlans" : [ {
+        "id" : "d996cb4c-9d0c-5256-0fc4-027c13816980",
+        "checksum" : "ec51fb6365a533a06a88282382cac9b8318eb52e",
+        "currency" : "CAD",
+        "revenueCloudMarketId" : "CAD",
+        "group" : {
+          "id" : "0",
+          "validFrom" : "2018-03-15T12:00:00Z",
+          "validUntil" : null
+        },
+        "markets" : [ {
+          "marketId" : "CA"
+        } ],
+        "description" : null,
+        "periodicity" : "calendar-monthly",
+        "fixedRates" : [ ],
+        "setupFees" : [ ],
+        "blockRates" : [ {
+          "id" : "0f1b45fa-ff87-4ce5-9a59-a6045d30d53d",
+          "metricId" : "instances",
+          "includedQuantity" : 0,
+          "blockSize" : 1,
+          "pricePerBlock" : {
+            "amount" : 7800.0,
+            "currency" : "CAD"
+          }
+        } ],
+        "allUnitVolumeRates" : [ ],
+        "tierRates" : [ ]
+      }, {
+        "id" : "eca304ef-f43a-bbb7-d893-9dd6c7c9df70",
+        "checksum" : "47a9d657b13607b6c3a00cc9f8d425b724900e46",
+        "currency" : "USD",
+        "revenueCloudMarketId" : "USD",
+        "group" : {
+          "id" : "0",
+          "validFrom" : "2018-03-15T12:00:00Z",
+          "validUntil" : null
+        },
+        "markets" : [ {
+          "marketId" : "US"
+        }, {
+          "marketId" : "EM"
+        } ],
+        "description" : null,
+        "periodicity" : "calendar-monthly",
+        "fixedRates" : [ ],
+        "setupFees" : [ ],
+        "blockRates" : [ {
+          "id" : "18433741-69c8-4935-8928-1063cade1b95",
+          "metricId" : "instances",
+          "includedQuantity" : 0,
+          "blockSize" : 1,
+          "pricePerBlock" : {
+            "amount" : 6050.0,
+            "currency" : "USD"
+          }
+        } ],
+        "allUnitVolumeRates" : [ ],
+        "tierRates" : [ ]
+      }, {
+        "id" : "9553a75a-53db-a715-542a-72ada7e98dfb",
+        "checksum" : "588f40e23327e351898c3a3860099b3c0db26991",
+        "currency" : "EUR",
+        "revenueCloudMarketId" : "EUR",
+        "group" : {
+          "id" : "0",
+          "validFrom" : "2018-03-15T12:00:00Z",
+          "validUntil" : null
+        },
+        "markets" : [ {
+          "marketId" : "europe"
+        } ],
+        "description" : null,
+        "periodicity" : "calendar-monthly",
+        "fixedRates" : [ ],
+        "setupFees" : [ ],
+        "blockRates" : [ {
+          "id" : "e35e798d-251d-41f0-b733-ed8d093a63c7",
+          "metricId" : "instances",
+          "includedQuantity" : 0,
+          "blockSize" : 1,
+          "pricePerBlock" : {
+            "amount" : 5000.0,
+            "currency" : "EUR"
+          }
+        } ],
+        "allUnitVolumeRates" : [ ],
+        "tierRates" : [ ]
+      }, {
+        "id" : "f67df1b7-bd7a-b5b4-1e9d-36a13deb302b",
+        "checksum" : "4eab99f3c22309051d8f7959d221362258d799a7",
+        "currency" : "GBP",
+        "revenueCloudMarketId" : "GBP",
+        "group" : {
+          "id" : "0",
+          "validFrom" : "2018-03-15T12:00:00Z",
+          "validUntil" : null
+        },
+        "markets" : [ {
+          "marketId" : "UK"
+        } ],
+        "description" : null,
+        "periodicity" : "calendar-monthly",
+        "fixedRates" : [ ],
+        "setupFees" : [ ],
+        "blockRates" : [ {
+          "id" : "60bd0c3f-9c74-42be-b232-f329a1bbef5f",
+          "metricId" : "instances",
+          "includedQuantity" : 0,
+          "blockSize" : 1,
+          "pricePerBlock" : {
+            "amount" : 3650.0,
+            "currency" : "GBP"
+          }
+        } ],
+        "allUnitVolumeRates" : [ ],
+        "tierRates" : [ ]
+      } ],
       "excludedFromBilling" : false,
+      "ratePlansExcludedFromBilling" : [ ],
       "materialNumberMappings" : [ {
         "code" : "8a20c9fa-6cfc-4cc0-93be-a09b39a020e8",
         "materialNumber" : "8005908",
@@ -15451,137 +15794,42 @@
         "chargingPeriod" : "Monthly",
         "defaultMetric" : false
       } ],
-      "ratePlans" : [ {
-        "id" : "d996cb4c-9d0c-5256-0fc4-027c13816980",
-        "technicalName" : "rp_postgresql_large_CAD",
-        "markets" : [ {
-          "marketId" : "CA"
-        } ],
-        "periodicity" : "calendar-monthly",
-        "fixedRates" : [ ],
-        "setupFees" : [ ],
-        "blockRates" : [ {
-          "id" : "0f1b45fa-ff87-4ce5-9a59-a6045d30d53d",
-          "pricePerBlock" : {
-            "amount" : 7800,
-            "currency" : "CAD"
-          },
-          "metricId" : "instances",
-          "includedQuantity" : 0,
-          "blockSize" : 1
-        } ],
-        "allUnitVolumeRates" : [ ],
-        "tierRates" : [ ],
-        "currency" : "CAD",
-        "revenueCloudMarketId" : "CAD",
-        "group" : {
-          "id" : "0",
-          "validFrom" : "2018-03-15T00:00:00Z"
-        },
-        "checksum" : "ec51fb6365a533a06a88282382cac9b8318eb52e"
+      "rcProductMappings" : [ {
+        "metricId" : "instances",
+        "revenueCloudProductId" : "7d255379-b2e1-4385-8888-687b79f26f65"
+      } ],
+      "rcRatePlanMappings" : [ {
+        "metricId" : "instances",
+        "ratePlanId" : "d996cb4c-9d0c-5256-0fc4-027c13816980",
+        "revenueCloudRatePlanId" : "5751195b-e373-4afc-a4b9-fe3c2d4cfe09"
       }, {
-        "id" : "eca304ef-f43a-bbb7-d893-9dd6c7c9df70",
-        "technicalName" : "rp_postgresql_large_USD",
-        "markets" : [ {
-          "marketId" : "US"
-        }, {
-          "marketId" : "EM"
-        } ],
-        "periodicity" : "calendar-monthly",
-        "fixedRates" : [ ],
-        "setupFees" : [ ],
-        "blockRates" : [ {
-          "id" : "18433741-69c8-4935-8928-1063cade1b95",
-          "pricePerBlock" : {
-            "amount" : 6050,
-            "currency" : "USD"
-          },
-          "metricId" : "instances",
-          "includedQuantity" : 0,
-          "blockSize" : 1
-        } ],
-        "allUnitVolumeRates" : [ ],
-        "tierRates" : [ ],
-        "currency" : "USD",
-        "revenueCloudMarketId" : "USD",
-        "group" : {
-          "id" : "0",
-          "validFrom" : "2018-03-15T00:00:00Z"
-        },
-        "checksum" : "47a9d657b13607b6c3a00cc9f8d425b724900e46"
+        "metricId" : "instances",
+        "ratePlanId" : "eca304ef-f43a-bbb7-d893-9dd6c7c9df70",
+        "revenueCloudRatePlanId" : "2f6d41f3-d2a2-4f8b-a32e-e4b01543eaae"
       }, {
-        "id" : "9553a75a-53db-a715-542a-72ada7e98dfb",
-        "technicalName" : "rp_postgresql_large_EUR",
-        "markets" : [ {
-          "marketId" : "europe"
-        } ],
-        "periodicity" : "calendar-monthly",
-        "fixedRates" : [ ],
-        "setupFees" : [ ],
-        "blockRates" : [ {
-          "id" : "e35e798d-251d-41f0-b733-ed8d093a63c7",
-          "pricePerBlock" : {
-            "amount" : 5000,
-            "currency" : "EUR"
-          },
-          "metricId" : "instances",
-          "includedQuantity" : 0,
-          "blockSize" : 1
-        } ],
-        "allUnitVolumeRates" : [ ],
-        "tierRates" : [ ],
-        "currency" : "EUR",
-        "revenueCloudMarketId" : "EUR",
-        "group" : {
-          "id" : "0",
-          "validFrom" : "2018-03-15T00:00:00Z"
-        },
-        "checksum" : "588f40e23327e351898c3a3860099b3c0db26991"
+        "metricId" : "instances",
+        "ratePlanId" : "9553a75a-53db-a715-542a-72ada7e98dfb",
+        "revenueCloudRatePlanId" : "125c6be2-88ce-4ac6-9feb-045189bc3f17"
       }, {
-        "id" : "f67df1b7-bd7a-b5b4-1e9d-36a13deb302b",
-        "technicalName" : "rp_postgresql_large_GBP",
-        "markets" : [ {
-          "marketId" : "UK"
-        } ],
-        "periodicity" : "calendar-monthly",
-        "fixedRates" : [ ],
-        "setupFees" : [ ],
-        "blockRates" : [ {
-          "id" : "60bd0c3f-9c74-42be-b232-f329a1bbef5f",
-          "pricePerBlock" : {
-            "amount" : 3650,
-            "currency" : "GBP"
-          },
-          "metricId" : "instances",
-          "includedQuantity" : 0,
-          "blockSize" : 1
-        } ],
-        "allUnitVolumeRates" : [ ],
-        "tierRates" : [ ],
-        "currency" : "GBP",
-        "revenueCloudMarketId" : "GBP",
-        "group" : {
-          "id" : "0",
-          "validFrom" : "2018-03-15T00:00:00Z"
-        },
-        "checksum" : "4eab99f3c22309051d8f7959d221362258d799a7"
+        "metricId" : "instances",
+        "ratePlanId" : "f67df1b7-bd7a-b5b4-1e9d-36a13deb302b",
+        "revenueCloudRatePlanId" : "fa117cf0-e222-4b41-a22e-74d2fea69460"
       } ],
       "contractTypes" : [ {
-        "name" : "Subscription",
-        "code" : "subscription"
+        "code" : "subscription",
+        "name" : "Subscription"
       }, {
-        "name" : "Cloud Credits",
-        "code" : "cloudcredits"
+        "code" : "cloudcredits",
+        "name" : "Cloud Credits"
       } ],
       "referencedEntitlementRules" : [ ],
       "features" : [ ],
-      "validFrom" : "2017-11-01T00:00:00Z",
-      "ratePlansExcludedFromBilling" : [ ]
+      "labels" : [ "prod", "stage" ]
     }, {
       "id" : "5417c322-4295-92e6-3ea1-52bc20cc5845",
-      "labels" : [ "prod", "stage" ],
-      "technicalName" : "ent_postgresql_xxsmall",
       "type" : "standard-entitlement-rule",
+      "technicalName" : "ent_postgresql_xxsmall",
+      "validFrom" : "2017-11-01T12:00:00Z",
       "servicePlanId" : "1254c86f-9ee4-4688-a779-9c64d814f3f6",
       "technicalAssetId" : {
         "composedId" : {
@@ -15595,7 +15843,127 @@
       }, {
         "technicalAssetVariantId" : "b7498a5b-4ef7-4961-8feb-7a099cd007c6"
       } ],
+      "ratePlans" : [ {
+        "id" : "5e90e37a-743c-68fd-8da6-29eed9767dc1",
+        "checksum" : "7ef3d81d9b5de06c15930851e143faefe2fff790",
+        "currency" : "EUR",
+        "revenueCloudMarketId" : "EUR",
+        "group" : {
+          "id" : "0",
+          "validFrom" : "2018-03-15T12:00:00Z",
+          "validUntil" : null
+        },
+        "markets" : [ {
+          "marketId" : "europe"
+        } ],
+        "description" : null,
+        "periodicity" : "calendar-monthly",
+        "fixedRates" : [ ],
+        "setupFees" : [ ],
+        "blockRates" : [ {
+          "id" : "230dc161-6dfe-4532-9f10-0923244ed706",
+          "metricId" : "instances",
+          "includedQuantity" : 0,
+          "blockSize" : 1,
+          "pricePerBlock" : {
+            "amount" : 450.0,
+            "currency" : "EUR"
+          }
+        } ],
+        "allUnitVolumeRates" : [ ],
+        "tierRates" : [ ]
+      }, {
+        "id" : "34250f29-1c9d-837c-0c6c-b18568866681",
+        "checksum" : "edc43d2f13f88d864ede4d217393494c699dc257",
+        "currency" : "USD",
+        "revenueCloudMarketId" : "USD",
+        "group" : {
+          "id" : "0",
+          "validFrom" : "2018-03-15T12:00:00Z",
+          "validUntil" : null
+        },
+        "markets" : [ {
+          "marketId" : "EM"
+        }, {
+          "marketId" : "US"
+        } ],
+        "description" : null,
+        "periodicity" : "calendar-monthly",
+        "fixedRates" : [ ],
+        "setupFees" : [ ],
+        "blockRates" : [ {
+          "id" : "fce48ce9-ac6e-4cdd-8421-81ab11551b18",
+          "metricId" : "instances",
+          "includedQuantity" : 0,
+          "blockSize" : 1,
+          "pricePerBlock" : {
+            "amount" : 545.0,
+            "currency" : "USD"
+          }
+        } ],
+        "allUnitVolumeRates" : [ ],
+        "tierRates" : [ ]
+      }, {
+        "id" : "b5d1d967-f8af-bdef-c681-707ae8ac0300",
+        "checksum" : "1b9586752d75d0eff0ac47cd4a24e97d43b6ce65",
+        "currency" : "GBP",
+        "revenueCloudMarketId" : "GBP",
+        "group" : {
+          "id" : "0",
+          "validFrom" : "2018-03-15T12:00:00Z",
+          "validUntil" : null
+        },
+        "markets" : [ {
+          "marketId" : "UK"
+        } ],
+        "description" : null,
+        "periodicity" : "calendar-monthly",
+        "fixedRates" : [ ],
+        "setupFees" : [ ],
+        "blockRates" : [ {
+          "id" : "ef5acc36-d9ee-48c5-859d-69b72aefa883",
+          "metricId" : "instances",
+          "includedQuantity" : 0,
+          "blockSize" : 1,
+          "pricePerBlock" : {
+            "amount" : 329.0,
+            "currency" : "GBP"
+          }
+        } ],
+        "allUnitVolumeRates" : [ ],
+        "tierRates" : [ ]
+      }, {
+        "id" : "e22d19d9-36d4-4676-a574-6e4ff0c6f53b",
+        "checksum" : "bab6e54feb1a9ae0f3a7ce124b368888324e4729",
+        "currency" : "CAD",
+        "revenueCloudMarketId" : "CAD",
+        "group" : {
+          "id" : "0",
+          "validFrom" : "2018-03-15T12:00:00Z",
+          "validUntil" : null
+        },
+        "markets" : [ {
+          "marketId" : "CA"
+        } ],
+        "description" : null,
+        "periodicity" : "calendar-monthly",
+        "fixedRates" : [ ],
+        "setupFees" : [ ],
+        "blockRates" : [ {
+          "id" : "6715e66b-49cb-41c7-8329-a0f384b81108",
+          "metricId" : "instances",
+          "includedQuantity" : 0,
+          "blockSize" : 1,
+          "pricePerBlock" : {
+            "amount" : 702.0,
+            "currency" : "CAD"
+          }
+        } ],
+        "allUnitVolumeRates" : [ ],
+        "tierRates" : [ ]
+      } ],
       "excludedFromBilling" : false,
+      "ratePlansExcludedFromBilling" : [ ],
       "materialNumberMappings" : [ {
         "code" : "81362080-be78-4279-96d6-beec34e581dd",
         "materialNumber" : "8005714",
@@ -15604,137 +15972,42 @@
         "chargingPeriod" : "Monthly",
         "defaultMetric" : true
       } ],
-      "ratePlans" : [ {
-        "id" : "5e90e37a-743c-68fd-8da6-29eed9767dc1",
-        "technicalName" : "rp_postgresql_xxsmall_EUR",
-        "markets" : [ {
-          "marketId" : "europe"
-        } ],
-        "periodicity" : "calendar-monthly",
-        "fixedRates" : [ ],
-        "setupFees" : [ ],
-        "blockRates" : [ {
-          "id" : "230dc161-6dfe-4532-9f10-0923244ed706",
-          "pricePerBlock" : {
-            "amount" : 450,
-            "currency" : "EUR"
-          },
-          "metricId" : "instances",
-          "includedQuantity" : 0,
-          "blockSize" : 1
-        } ],
-        "allUnitVolumeRates" : [ ],
-        "tierRates" : [ ],
-        "currency" : "EUR",
-        "revenueCloudMarketId" : "EUR",
-        "group" : {
-          "id" : "0",
-          "validFrom" : "2018-03-15T00:00:00Z"
-        },
-        "checksum" : "7ef3d81d9b5de06c15930851e143faefe2fff790"
+      "rcProductMappings" : [ {
+        "metricId" : "instances",
+        "revenueCloudProductId" : "f36e506d-e239-4bbb-8d39-cdcb781aaaa4"
+      } ],
+      "rcRatePlanMappings" : [ {
+        "metricId" : "instances",
+        "ratePlanId" : "5e90e37a-743c-68fd-8da6-29eed9767dc1",
+        "revenueCloudRatePlanId" : "a5905755-b7c7-4302-bc24-35f4b03757c3"
       }, {
-        "id" : "34250f29-1c9d-837c-0c6c-b18568866681",
-        "technicalName" : "rp_postgresql_xxsmall_USD",
-        "markets" : [ {
-          "marketId" : "EM"
-        }, {
-          "marketId" : "US"
-        } ],
-        "periodicity" : "calendar-monthly",
-        "fixedRates" : [ ],
-        "setupFees" : [ ],
-        "blockRates" : [ {
-          "id" : "fce48ce9-ac6e-4cdd-8421-81ab11551b18",
-          "pricePerBlock" : {
-            "amount" : 545,
-            "currency" : "USD"
-          },
-          "metricId" : "instances",
-          "includedQuantity" : 0,
-          "blockSize" : 1
-        } ],
-        "allUnitVolumeRates" : [ ],
-        "tierRates" : [ ],
-        "currency" : "USD",
-        "revenueCloudMarketId" : "USD",
-        "group" : {
-          "id" : "0",
-          "validFrom" : "2018-03-15T00:00:00Z"
-        },
-        "checksum" : "edc43d2f13f88d864ede4d217393494c699dc257"
+        "metricId" : "instances",
+        "ratePlanId" : "34250f29-1c9d-837c-0c6c-b18568866681",
+        "revenueCloudRatePlanId" : "7196545c-a07a-4990-9988-1365fe27ce55"
       }, {
-        "id" : "b5d1d967-f8af-bdef-c681-707ae8ac0300",
-        "technicalName" : "rp_postgresql_xxsmall_GBP",
-        "markets" : [ {
-          "marketId" : "UK"
-        } ],
-        "periodicity" : "calendar-monthly",
-        "fixedRates" : [ ],
-        "setupFees" : [ ],
-        "blockRates" : [ {
-          "id" : "ef5acc36-d9ee-48c5-859d-69b72aefa883",
-          "pricePerBlock" : {
-            "amount" : 329,
-            "currency" : "GBP"
-          },
-          "metricId" : "instances",
-          "includedQuantity" : 0,
-          "blockSize" : 1
-        } ],
-        "allUnitVolumeRates" : [ ],
-        "tierRates" : [ ],
-        "currency" : "GBP",
-        "revenueCloudMarketId" : "GBP",
-        "group" : {
-          "id" : "0",
-          "validFrom" : "2018-03-15T00:00:00Z"
-        },
-        "checksum" : "1b9586752d75d0eff0ac47cd4a24e97d43b6ce65"
+        "metricId" : "instances",
+        "ratePlanId" : "b5d1d967-f8af-bdef-c681-707ae8ac0300",
+        "revenueCloudRatePlanId" : "57eda10b-4460-4bc3-a7f2-4fdbba3ac2a2"
       }, {
-        "id" : "e22d19d9-36d4-4676-a574-6e4ff0c6f53b",
-        "technicalName" : "rp_postgresql_xxsmall_CAD",
-        "markets" : [ {
-          "marketId" : "CA"
-        } ],
-        "periodicity" : "calendar-monthly",
-        "fixedRates" : [ ],
-        "setupFees" : [ ],
-        "blockRates" : [ {
-          "id" : "6715e66b-49cb-41c7-8329-a0f384b81108",
-          "pricePerBlock" : {
-            "amount" : 702,
-            "currency" : "CAD"
-          },
-          "metricId" : "instances",
-          "includedQuantity" : 0,
-          "blockSize" : 1
-        } ],
-        "allUnitVolumeRates" : [ ],
-        "tierRates" : [ ],
-        "currency" : "CAD",
-        "revenueCloudMarketId" : "CAD",
-        "group" : {
-          "id" : "0",
-          "validFrom" : "2018-03-15T00:00:00Z"
-        },
-        "checksum" : "bab6e54feb1a9ae0f3a7ce124b368888324e4729"
+        "metricId" : "instances",
+        "ratePlanId" : "e22d19d9-36d4-4676-a574-6e4ff0c6f53b",
+        "revenueCloudRatePlanId" : "00269c0e-a5e1-4eb6-aa93-b4864775f0d5"
       } ],
       "contractTypes" : [ {
-        "name" : "Subscription",
-        "code" : "subscription"
+        "code" : "subscription",
+        "name" : "Subscription"
       }, {
-        "name" : "Cloud Credits",
-        "code" : "cloudcredits"
+        "code" : "cloudcredits",
+        "name" : "Cloud Credits"
       } ],
       "referencedEntitlementRules" : [ ],
       "features" : [ ],
-      "validFrom" : "2017-11-01T00:00:00Z",
-      "ratePlansExcludedFromBilling" : [ ]
+      "labels" : [ "prod", "stage" ]
     }, {
       "id" : "1bdc01ed-feb7-0484-b2d9-12e6bc3e8657",
-      "labels" : [ "prod", "stage" ],
-      "technicalName" : "ent_postgresql_aws_brazil_xxsmall",
       "type" : "standard-entitlement-rule",
+      "technicalName" : "ent_postgresql_aws_brazil_xxsmall",
+      "validFrom" : "2017-11-01T12:00:00Z",
       "servicePlanId" : "1254c86f-9ee4-4688-a779-9c64d814f3f6",
       "technicalAssetId" : {
         "composedId" : {
@@ -15746,7 +16019,127 @@
       "technicalAssetVariants" : [ {
         "technicalAssetVariantId" : "a0ec6e07-2f7f-4693-a7fe-363f8e42411e"
       } ],
+      "ratePlans" : [ {
+        "id" : "cc1ff94d-2115-923c-a031-cd94a17d2b4b",
+        "checksum" : "5800f70eacda24a2140ce19e7bd598c83ca454c2",
+        "currency" : "GBP",
+        "revenueCloudMarketId" : "GBP",
+        "group" : {
+          "id" : "0",
+          "validFrom" : "2018-03-15T12:00:00Z",
+          "validUntil" : null
+        },
+        "markets" : [ {
+          "marketId" : "UK"
+        } ],
+        "description" : null,
+        "periodicity" : "calendar-monthly",
+        "fixedRates" : [ ],
+        "setupFees" : [ ],
+        "blockRates" : [ {
+          "id" : "23f4535c-e2e4-42b4-8e36-decf3bfb145a",
+          "metricId" : "instances",
+          "includedQuantity" : 0,
+          "blockSize" : 1,
+          "pricePerBlock" : {
+            "amount" : 339.0,
+            "currency" : "GBP"
+          }
+        } ],
+        "allUnitVolumeRates" : [ ],
+        "tierRates" : [ ]
+      }, {
+        "id" : "648608e5-2f9f-d981-475e-251c712e6c7a",
+        "checksum" : "3de4d85c694faa8b1dcbce3d166eebd5798a118a",
+        "currency" : "EUR",
+        "revenueCloudMarketId" : "EUR",
+        "group" : {
+          "id" : "0",
+          "validFrom" : "2018-03-15T12:00:00Z",
+          "validUntil" : null
+        },
+        "markets" : [ {
+          "marketId" : "europe"
+        } ],
+        "description" : null,
+        "periodicity" : "calendar-monthly",
+        "fixedRates" : [ ],
+        "setupFees" : [ ],
+        "blockRates" : [ {
+          "id" : "c0111368-7940-494d-a32f-6463ca8886ca",
+          "metricId" : "instances",
+          "includedQuantity" : 0,
+          "blockSize" : 1,
+          "pricePerBlock" : {
+            "amount" : 465.0,
+            "currency" : "EUR"
+          }
+        } ],
+        "allUnitVolumeRates" : [ ],
+        "tierRates" : [ ]
+      }, {
+        "id" : "ea7162a9-b5ff-ee8e-1b4c-2cdde265f93c",
+        "checksum" : "481961466453757a427f1b49531457e9bf6b6e2c",
+        "currency" : "CAD",
+        "revenueCloudMarketId" : "CAD",
+        "group" : {
+          "id" : "0",
+          "validFrom" : "2018-03-15T12:00:00Z",
+          "validUntil" : null
+        },
+        "markets" : [ {
+          "marketId" : "CA"
+        } ],
+        "description" : null,
+        "periodicity" : "calendar-monthly",
+        "fixedRates" : [ ],
+        "setupFees" : [ ],
+        "blockRates" : [ {
+          "id" : "6a67f193-de52-46f4-8765-9da69b0c9f9c",
+          "metricId" : "instances",
+          "includedQuantity" : 0,
+          "blockSize" : 1,
+          "pricePerBlock" : {
+            "amount" : 725.0,
+            "currency" : "CAD"
+          }
+        } ],
+        "allUnitVolumeRates" : [ ],
+        "tierRates" : [ ]
+      }, {
+        "id" : "ff4560cf-abbd-db6e-cb2c-384b4be8a0d4",
+        "checksum" : "5ecd1a9d10183dd930d76de2a1a4c2413817dc7b",
+        "currency" : "USD",
+        "revenueCloudMarketId" : "USD",
+        "group" : {
+          "id" : "0",
+          "validFrom" : "2018-03-15T12:00:00Z",
+          "validUntil" : null
+        },
+        "markets" : [ {
+          "marketId" : "EM"
+        }, {
+          "marketId" : "US"
+        } ],
+        "description" : null,
+        "periodicity" : "calendar-monthly",
+        "fixedRates" : [ ],
+        "setupFees" : [ ],
+        "blockRates" : [ {
+          "id" : "8b85bc9a-cbaa-4561-819e-aae4672e08ed",
+          "metricId" : "instances",
+          "includedQuantity" : 0,
+          "blockSize" : 1,
+          "pricePerBlock" : {
+            "amount" : 563.0,
+            "currency" : "USD"
+          }
+        } ],
+        "allUnitVolumeRates" : [ ],
+        "tierRates" : [ ]
+      } ],
       "excludedFromBilling" : false,
+      "ratePlansExcludedFromBilling" : [ ],
       "materialNumberMappings" : [ {
         "code" : "664aff7b-b298-4a4d-9128-04f3a405ca1d",
         "materialNumber" : "8005904",
@@ -15755,132 +16148,37 @@
         "chargingPeriod" : "Monthly",
         "defaultMetric" : false
       } ],
-      "ratePlans" : [ {
-        "id" : "cc1ff94d-2115-923c-a031-cd94a17d2b4b",
-        "technicalName" : "rp_postgresql_aws-brazil_xxsmall_GBP",
-        "markets" : [ {
-          "marketId" : "UK"
-        } ],
-        "periodicity" : "calendar-monthly",
-        "fixedRates" : [ ],
-        "setupFees" : [ ],
-        "blockRates" : [ {
-          "id" : "23f4535c-e2e4-42b4-8e36-decf3bfb145a",
-          "pricePerBlock" : {
-            "amount" : 339,
-            "currency" : "GBP"
-          },
-          "metricId" : "instances",
-          "includedQuantity" : 0,
-          "blockSize" : 1
-        } ],
-        "allUnitVolumeRates" : [ ],
-        "tierRates" : [ ],
-        "currency" : "GBP",
-        "revenueCloudMarketId" : "GBP",
-        "group" : {
-          "id" : "0",
-          "validFrom" : "2018-03-15T00:00:00Z"
-        },
-        "checksum" : "5800f70eacda24a2140ce19e7bd598c83ca454c2"
+      "rcProductMappings" : [ {
+        "metricId" : "instances",
+        "revenueCloudProductId" : "09386a15-06fa-4a4e-b2cb-310e73c7f569"
+      } ],
+      "rcRatePlanMappings" : [ {
+        "metricId" : "instances",
+        "ratePlanId" : "cc1ff94d-2115-923c-a031-cd94a17d2b4b",
+        "revenueCloudRatePlanId" : "884142c8-3aaf-467b-94d4-551d6f12f17c"
       }, {
-        "id" : "648608e5-2f9f-d981-475e-251c712e6c7a",
-        "technicalName" : "rp_postgresql_aws-brazil_xxsmall_EUR",
-        "markets" : [ {
-          "marketId" : "europe"
-        } ],
-        "periodicity" : "calendar-monthly",
-        "fixedRates" : [ ],
-        "setupFees" : [ ],
-        "blockRates" : [ {
-          "id" : "c0111368-7940-494d-a32f-6463ca8886ca",
-          "pricePerBlock" : {
-            "amount" : 465,
-            "currency" : "EUR"
-          },
-          "metricId" : "instances",
-          "includedQuantity" : 0,
-          "blockSize" : 1
-        } ],
-        "allUnitVolumeRates" : [ ],
-        "tierRates" : [ ],
-        "currency" : "EUR",
-        "revenueCloudMarketId" : "EUR",
-        "group" : {
-          "id" : "0",
-          "validFrom" : "2018-03-15T00:00:00Z"
-        },
-        "checksum" : "3de4d85c694faa8b1dcbce3d166eebd5798a118a"
+        "metricId" : "instances",
+        "ratePlanId" : "648608e5-2f9f-d981-475e-251c712e6c7a",
+        "revenueCloudRatePlanId" : "fe4d61d0-549b-42c2-9e12-81f5d9ea17b2"
       }, {
-        "id" : "ea7162a9-b5ff-ee8e-1b4c-2cdde265f93c",
-        "technicalName" : "rp_postgresql_aws-brazil_xxsmall_CAD",
-        "markets" : [ {
-          "marketId" : "CA"
-        } ],
-        "periodicity" : "calendar-monthly",
-        "fixedRates" : [ ],
-        "setupFees" : [ ],
-        "blockRates" : [ {
-          "id" : "6a67f193-de52-46f4-8765-9da69b0c9f9c",
-          "pricePerBlock" : {
-            "amount" : 725,
-            "currency" : "CAD"
-          },
-          "metricId" : "instances",
-          "includedQuantity" : 0,
-          "blockSize" : 1
-        } ],
-        "allUnitVolumeRates" : [ ],
-        "tierRates" : [ ],
-        "currency" : "CAD",
-        "revenueCloudMarketId" : "CAD",
-        "group" : {
-          "id" : "0",
-          "validFrom" : "2018-03-15T00:00:00Z"
-        },
-        "checksum" : "481961466453757a427f1b49531457e9bf6b6e2c"
+        "metricId" : "instances",
+        "ratePlanId" : "ea7162a9-b5ff-ee8e-1b4c-2cdde265f93c",
+        "revenueCloudRatePlanId" : "3bf1e871-a354-48cb-951e-f8d718a67fb6"
       }, {
-        "id" : "ff4560cf-abbd-db6e-cb2c-384b4be8a0d4",
-        "technicalName" : "rp_postgresql_aws-brazil_xxsmall_USD",
-        "markets" : [ {
-          "marketId" : "EM"
-        }, {
-          "marketId" : "US"
-        } ],
-        "periodicity" : "calendar-monthly",
-        "fixedRates" : [ ],
-        "setupFees" : [ ],
-        "blockRates" : [ {
-          "id" : "8b85bc9a-cbaa-4561-819e-aae4672e08ed",
-          "pricePerBlock" : {
-            "amount" : 563,
-            "currency" : "USD"
-          },
-          "metricId" : "instances",
-          "includedQuantity" : 0,
-          "blockSize" : 1
-        } ],
-        "allUnitVolumeRates" : [ ],
-        "tierRates" : [ ],
-        "currency" : "USD",
-        "revenueCloudMarketId" : "USD",
-        "group" : {
-          "id" : "0",
-          "validFrom" : "2018-03-15T00:00:00Z"
-        },
-        "checksum" : "5ecd1a9d10183dd930d76de2a1a4c2413817dc7b"
+        "metricId" : "instances",
+        "ratePlanId" : "ff4560cf-abbd-db6e-cb2c-384b4be8a0d4",
+        "revenueCloudRatePlanId" : "e5771d70-73df-42fe-9240-05ad9063c79d"
       } ],
       "contractTypes" : [ {
-        "name" : "Subscription",
-        "code" : "subscription"
+        "code" : "subscription",
+        "name" : "Subscription"
       }, {
-        "name" : "Cloud Credits",
-        "code" : "cloudcredits"
+        "code" : "cloudcredits",
+        "name" : "Cloud Credits"
       } ],
       "referencedEntitlementRules" : [ ],
       "features" : [ ],
-      "validFrom" : "2017-11-01T00:00:00Z",
-      "ratePlansExcludedFromBilling" : [ ]
+      "labels" : [ "prod", "stage" ]
     } ],
     "tags" : [ {
       "type" : "CAT",
