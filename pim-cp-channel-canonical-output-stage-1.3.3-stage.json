@@ -15875,7 +15875,7 @@
         "iconUrl": "https://digitalmarketplace-sapcp.s3.eu-central-1.amazonaws.com/DR-TaUfZSJuAaC89RmL8Ft-U2kBVmZMTVDj0A-A1CxVnNiw5ffVzwDeZEwOZ7cNF.svg"
       },
       "keywords": [],
-      "extractionTimestamp": "2018-10-18T10:15:56.406Z",
+      "extractionTimestamp": "2018-10-18T10:18:56.406Z",
       "headlines": [
         {
           "headline": "Entitlement Repository",
@@ -15975,11 +15975,11 @@
               "checksum": "398bace97a11f262d0bbf0c73e859691908bd9e1"
             },
             {
-              "id": "8f20c484-b899-4189-a19b-27a22cd66f77",
-              "technicalName": "rp_ems_subscription_enterprise_US",
+              "id": "8f20c484-b899-4189-a19b-27a22cd65557",
+              "technicalName": "rp_ems_subscription_enterprise_CHF",
               "markets": [
                 {
-                  "marketId": "us"
+                  "marketId": "ch"
                 }
               ],
               "periodicity": "calendar-monthly",
@@ -15990,7 +15990,7 @@
                   "id": "b90ff8a4-86d1-dd00-6dbc-36022232d45b",
                   "pricePerBlock": {
                     "amount": 14000,
-                    "currency": "USD"
+                    "currency": "CHF"
                   },
                   "metricId": "document",
                   "includedQuantity": 0,
@@ -15999,13 +15999,13 @@
               ],
               "allUnitVolumeRates": [],
               "tierRates": [],
-              "currency": "USD",
-              "revenueCloudMarketId": "USD",
+              "currency": "CHF",
+              "revenueCloudMarketId": "CHF",
               "group": {
                 "id": "0",
                 "validFrom": "2018-10-17T00:00:00Z"
               },
-              "checksum": "398bace97a11f262d0bbf0c74e859691908bd9e1"
+              "checksum": "398bace97a11f262d0bbf0c74e855591908bd9e1"
             }
           ],
           "contractTypes": [
