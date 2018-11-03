@@ -498,6 +498,93 @@
                 "validFrom": "2018-08-01T00:00:00Z"
               },
               "checksum": "f861e648ba450ee289de3c31637033b53a973743"
+            },
+            {
+              "id": "10daf4a8-7895-40df-9d07-643fd44335fc",
+              "technicalName": "rp_abap_abap_16_abap_64_db_cpea_KRW_151018",
+              "markets": [
+                {
+                  "marketId": "KR"
+                }
+              ],
+              "description": "Generated automatically",
+              "periodicity": "calendar-monthly",
+              "fixedRates": [],
+              "setupFees": [],
+              "blockRates": [
+                {
+                  "id": "8e636b4a-e75f-4743-885e-cea8d6511377",
+                  "pricePerBlock": {
+                    "amount": 2503.673,
+                    "currency": "KRW"
+                  },
+                  "metricId": "runtime_memory_in_16_gb_blocks",
+                  "includedQuantity": 0,
+                  "blockSize": 1
+                },
+                {
+                  "id": "7787dfd8-4846-4a4e-9279-5797fa14443d",
+                  "pricePerBlock": {
+                    "amount": 715.335,
+                    "currency": "KRW"
+                  },
+                  "metricId": "persistent_memory_in_16_gb_blocks",
+                  "includedQuantity": 0,
+                  "blockSize": 1
+                }
+              ],
+              "allUnitVolumeRates": [],
+              "tierRates": [],
+              "currency": "KRW",
+              "revenueCloudMarketId": "KRW",
+              "group": {
+                "id": "0",
+                "validFrom": "2018-10-15T00:00:00Z"
+              },
+              "checksum": "dc3e7d3d5f5000fc1ee79be5bfcdc4ba53901fe2"
+            },
+            {
+              "id": "0952b8bb-621b-4f33-a296-57199d5f48c0",
+              "technicalName": "rp_abap_16_abap_64_db_cpea_AUD_01082018",
+              "markets": [
+                {
+                  "marketId": "AU"
+                }
+              ],
+              "periodicity": "calendar-monthly",
+              "fixedRates": [],
+              "setupFees": [],
+              "blockRates": [
+                {
+                  "id": "5b7b0ecf-9db6-f6c1-33a6-a1514e7e8413",
+                  "pricePerBlock": {
+                    "amount": 0.847,
+                    "currency": "AUD"
+                  },
+                  "metricId": "persistent_memory_in_16_gb_blocks",
+                  "includedQuantity": 0,
+                  "blockSize": 1
+                },
+                {
+                  "id": "a14d58e9-f63d-d66e-db47-ae6b0faaf111",
+                  "pricePerBlock": {
+                    "amount": 2.964,
+                    "currency": "AUD"
+                  },
+                  "metricId": "runtime_memory_in_16_gb_blocks",
+                  "includedQuantity": 0,
+                  "blockSize": 1
+                }
+              ],
+              "allUnitVolumeRates": [],
+              "tierRates": [],
+              "currency": "AUD",
+              "revenueCloudMarketId": "AUD",
+              "group": {
+                "id": "0",
+                "validFrom": "2018-08-01T00:00:00Z"
+              },
+              "checksum": "4d9d9d70191aa7c9ad0957855ba0b2706133cd15"
             }
           ],
           "contractTypes": [
@@ -537,7 +624,7 @@
             {
               "code": "4f5482d4-c70c-40b5-8303-886af736e874",
               "materialNumber": "S_8006182",
-              "metricId": "toys",
+              "metricId": "persistent_memory_in_16_gb_blocks",
               "type": "ISP",
               "chargingPeriod": "Monthly",
               "defaultMetric": false
@@ -579,7 +666,7 @@
               "allUnitVolumeRates": [
                 {
                   "id": "df578758-ab79-4f5f-be0a-422082c3b1b8",
-                  "metricId": "test_elements",
+                  "metricId": "persistent_memory_in_16_gb_blocks",
                   "tiers": [
                     {
                       "bound": 10,
