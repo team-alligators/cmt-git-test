@@ -5,7 +5,7 @@
       "composedId": {
         "id": "0ad55771-a533-4d25-a4dd-e3d8b1ffa4f6",
         "version": "1.0",
-        "catalog": "live"
+        "catalog": "dev"
       },
       "locale": "en_US",
       "technicalName": "abap",
@@ -96,7 +96,7 @@
   "products": [
       {
       "composedId": {
-        "catalog": "live",
+        "catalog": "dev",
         "id": "4d0a6f95-42aa-4157-9932-d6014a68d825",
         "version": "v1"
       },
@@ -257,7 +257,7 @@
             "composedId": {
               "id": "0ad55771-a533-4d25-a4dd-e3d8b1ffa4f6",
               "version": "1.0",
-              "catalog": "live"
+              "catalog": "dev"
             }
           },
           "technicalAssetVariants": [
@@ -2526,7 +2526,7 @@
             "composedId": {
               "id": "0ad55771-a533-4d25-a4dd-e3d8b1ffa4f6",
               "version": "1.0",
-              "catalog": "live"
+              "catalog": "dev"
             }
           },
           "technicalAssetVariants": [
